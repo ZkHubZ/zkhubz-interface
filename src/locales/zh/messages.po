@@ -30,19 +30,19 @@ msgid "<0/>Profit price: {0} ${1}. This rule applies for the next {2}, until {3}
 msgstr "利润价格： {0} ${1}此规则生效从{2}至{3}"
 
 #: src/App/App.js
-msgid "<0>Install Coinbase Wallet</0> to start using GMX."
+msgid "<0>Install Coinbase Wallet</0> to start using ZMX."
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install Coinbase Wallet</0>, and use GMX with its built-in browser."
+msgid "<0>Install Coinbase Wallet</0>, and use ZMX with its built-in browser."
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install MetaMask</0> to start using GMX."
+msgid "<0>Install MetaMask</0> to start using ZMX."
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install MetaMask</0>, and use GMX with its built-in browser."
+msgid "<0>Install MetaMask</0>, and use ZMX with its built-in browser."
 msgstr ""
 
 #: src/components/Exchange/OrdersToa.js
@@ -67,8 +67,8 @@ msgid "<0>The price that orders can be executed at may differ slightly from the 
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to GMX will remain as GMX tokens.<3/><4/>To claim GMX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
-msgstr "这将撤回和取消保留所有代币并暂停授权。<1/><2/>esGMX 代币已转换为 GMX 将保留为 GMX 代币。<3/><4/>要在不撤回的情况下领取 GMX 代币，点选 “总奖励”下的“领取”按钮。<5/><6/></0>"
+msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to ZMX will remain as ZMX tokens.<3/><4/>To claim ZMX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
+msgstr "这将撤回和取消保留所有代币并暂停授权。<1/><2/>esGMX 代币已转换为 ZMX 将保留为 ZMX 代币。<3/><4/>要在不撤回的情况下领取 ZMX 代币，点选 “总奖励”下的“领取”按钮。<5/><6/></0>"
 
 #: src/pages/Dashboard/DashboardV2.js
 msgid "<0>Total value of tokens in ZLP pool ({chainName}).</0><1>Other websites may show a higher value as they add positions' collaterals to the ZLP pool.</1>"
@@ -272,7 +272,7 @@ msgstr "核准已被取消"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 #: src/pages/Stake/StakeV2.js
-msgid "Approve GMX"
+msgid "Approve ZMX"
 msgstr "核准GMX"
 
 #: src/components/Exchange/PositionEditor.js
@@ -288,7 +288,7 @@ msgid "Approve {stakingTokenSymbol}"
 msgstr "核准"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Approving GMX..."
+msgid "Approving ZMX..."
 msgstr "核准GMX中"
 
 #: src/components/Exchange/PositionEditor.js
@@ -321,7 +321,7 @@ msgid "Assets Under Management"
 msgstr "管理中资产"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "Assets Under Management: GMX staked (All chains) + ZLP pool ({chainName})."
+msgid "Assets Under Management: ZMX staked (All chains) + ZLP pool ({chainName})."
 msgstr "管理中资产。 GMX质押（所有链）+GLP池（{链名}）."
 
 #: src/components/Glp/GlpSwap.js
@@ -429,47 +429,47 @@ msgid "Buy ZLP"
 msgstr "购买GLP"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Buy GMX"
+msgid "Buy ZMX"
 msgstr "购买GMX"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from Traderjoe:"
+msgid "Buy ZMX from Traderjoe:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from Uniswap (make sure to select Arbitrum):"
+msgid "Buy ZMX from Uniswap (make sure to select Arbitrum):"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from a Decentralized Exchange"
+msgid "Buy ZMX from a Decentralized Exchange"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from centralized exchanges:"
+msgid "Buy ZMX from centralized exchanges:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from centralized services"
+msgid "Buy ZMX from centralized services"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX on {0}"
+msgid "Buy ZMX on {0}"
 msgstr ""
 
 #: src/pages/Buy/Buy.js
-msgid "Buy GMX or ZLP"
+msgid "Buy ZMX or ZLP"
 msgstr "购买GMX或GLP"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX using Decentralized Exchange Aggregators:"
+msgid "Buy ZMX using Decentralized Exchange Aggregators:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX using FIAT gateways:"
+msgid "Buy ZMX using FIAT gateways:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX using any token from any network:"
+msgid "Buy ZMX using any token from any network:"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -578,7 +578,7 @@ msgstr "领取"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Claim GMX Rewards"
+msgid "Claim ZMX Rewards"
 msgstr "领取GMX奖励"
 
 #: src/pages/Stake/StakeV2.js
@@ -809,7 +809,7 @@ msgid "Continue"
 msgstr "继续"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Convert esGMX tokens to GMX tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
+msgid "Convert esGMX tokens to ZMX tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
 msgstr "将esGMX代币转换为GMX代币。<0/>使用金库前请阅读<1>投资细节</1>"
 
 #: src/pages/Stake/StakeV2.js
@@ -931,7 +931,7 @@ msgid "Dashboard"
 msgstr "仪表板"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Dashboard for GMX referral stats"
+msgid "Dashboard for ZMX referral stats"
 msgstr "GMX推荐统计数据仪表板"
 
 #: src/pages/Ecosystem/Ecosystem.js
@@ -1254,12 +1254,12 @@ msgstr "入场价格"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Escrowed GMX"
+msgid "Escrowed ZMX"
 msgstr "托管的GMX"
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Stake/GMXAprTooltip.tsx
-msgid "Escrowed GMX APR"
+msgid "Escrowed ZMX APR"
 msgstr "托管的GMX年利率"
 
 #: src/pages/OrdersOverview/OrdersOverview.js
@@ -1310,7 +1310,7 @@ msgid "Fees are high to swap from {0} to {1}. <0/>{2} is needed for collateral."
 msgstr "从{0}交换到{1}的费用较高。<0/>{2}需要抵押品"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Fees generated by GMX"
+msgid "Fees generated by ZMX"
 msgstr "费用由GMX所产生"
 
 #: src/components/Glp/GlpSwap.js
@@ -1379,7 +1379,7 @@ msgid "ZLP Vault"
 msgstr "GLP库"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "ZLP and GMX autocompounding vaults"
+msgid "ZLP and ZMX autocompounding vaults"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
@@ -1399,89 +1399,89 @@ msgid "ZLP sell disabled, pending {0} upgrade"
 msgstr "GLP售卖已禁止，等待{0}升级"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Announcements and Updates"
+msgid "ZMX Announcements and Updates"
 msgstr "GMX公告和更新"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Blueberry NFTs"
-msgstr "GMX 蓝莓 NFTs"
+msgid "ZMX Blueberry NFTs"
+msgstr "ZMX 蓝莓 NFTs"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Governance Page"
+msgid "ZMX Governance Page"
 msgstr "GMX治理页面"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Pages"
+msgid "ZMX Pages"
 msgstr "GMX页面"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Perpetuals Data"
+msgid "ZMX Perpetuals Data"
 msgstr "GMX永续产品数据"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Proposals Voting page"
+msgid "ZMX Proposals Voting page"
 msgstr "GMX提案投票页面"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Stats Page"
+msgid "ZMX Stats Page"
 msgstr "GMX统计页面"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "GMX Vault"
+msgid "ZMX Vault"
 msgstr "GMX库"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Weekly Updates"
+msgid "ZMX Weekly Updates"
 msgstr "GMX每周更新"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "GMX bonds can be bought on Bond Protocol with a discount and a small vesting period:"
+msgid "ZMX bonds can be bought on Bond Protocol with a discount and a small vesting period:"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX community discussion"
+msgid "ZMX community discussion"
 msgstr "GMX社区讨论"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX dashboards and analytics."
+msgid "ZMX dashboards and analytics."
 msgstr "GMX信息板和分析"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX ecosystem pages."
-msgstr "GMX 生态系统页面"
+msgid "ZMX ecosystem pages."
+msgstr "ZMX 生态系统页面"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX explorer for stats and traders"
+msgid "ZMX explorer for stats and traders"
 msgstr "用于统计和交易的GMX探索器"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX fundamentals"
+msgid "ZMX fundamentals"
 msgstr "GMX基础"
 
 #: src/pages/Home/Home.js
-msgid "GMX is currently live on Arbitrum and Avalanche."
+msgid "ZMX is currently live on Arbitrum and Avalanche."
 msgstr "GMX目前在Arbitrum和Avalanche上线"
 
 #: src/pages/Jobs/Jobs.js
-msgid "GMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
+msgid "ZMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
 msgstr "GMX目前没有积极寻找新员工。但是，如果你认为你能为项目做出贡献，请发电子邮件到<0>jobs@gmx.io</0>"
 
 #: src/components/TokenCard/TokenCard.js
-msgid "GMX is the utility and governance token. Accrues 30% of the platform's generated fees."
+msgid "ZMX is the utility and governance token. Accrues 30% of the platform's generated fees."
 msgstr "GMX是效用和治理代币。拥有30%累积平台产生的费用"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX staking calculator"
+msgid "ZMX staking calculator"
 msgstr "GMX质押计算器"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX staking rewards updates and insights"
+msgid "ZMX staking rewards updates and insights"
 msgstr "GMX质押奖励更新和详解"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "GMX transfers not yet enabled"
+msgid "ZMX transfers not yet enabled"
 msgstr "尚未启用GMX转账功能"
 
 #: src/components/Referrals/AddAffiliateCode.js
@@ -1493,7 +1493,7 @@ msgid "Generating shareable image..."
 msgstr "生成可分享的图像中..."
 
 #: src/pages/Referrals/Referrals.js
-msgid "Get fee discounts and earn rebates through the GMX referral program.<0/>For more information, please read the <1>referral program details</1>."
+msgid "Get fee discounts and earn rebates through the ZMX referral program.<0/>For more information, please read the <1>referral program details</1>."
 msgstr "通过GMX推荐计划获得折扣和赚取回扣。<0/>更多信息，请阅读<1>推荐计划细节</1>。\""
 
 #: src/components/Header/HomeHeaderLinks.tsx
@@ -1655,7 +1655,7 @@ msgid "Invalid token indexToken: \"{0}\" collateralToken: \"{1}\""
 msgstr "无效代币索引代币: \"{0}\" 抵押品代币: \"{1}\\"
 
 #: src/pages/Jobs/Jobs.js
-msgid "Job openings at GMX."
+msgid "Job openings at ZMX."
 msgstr "GMX的职位空缺"
 
 #: src/pages/Jobs/Jobs.js
@@ -1681,7 +1681,7 @@ msgid "Leaderboard"
 msgstr "排行榜"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Leaderboard for GMX traders"
+msgid "Leaderboard for ZMX traders"
 msgstr "GMX交易者排行榜"
 
 #: src/components/Exchange/PositionEditor.js
@@ -2128,7 +2128,7 @@ msgid "No open positions"
 msgstr "没有未结头寸"
 
 #: src/pages/Jobs/Jobs.js
-msgid "No open positions at GMX currently"
+msgid "No open positions at ZMX currently"
 msgstr "目前在GMX没有未结头寸"
 
 #: src/pages/OrdersOverview/OrdersOverview.js
@@ -2336,7 +2336,7 @@ msgid "Please input a referral code to benefit from fee discounts."
 msgstr "请输入推荐代码，以获得折扣"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Please only use this for full account transfers.<0/>This will transfer all your GMX, esGMX, ZLP and Multiplier Points to your new account.<1/>Transfers are only supported if the receiving account has not staked GMX or ZLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
+msgid "Please only use this for full account transfers.<0/>This will transfer all your ZMX, esGMX, ZLP and Multiplier Points to your new account.<1/>Transfers are only supported if the receiving account has not staked ZMX or ZLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
 msgstr "<0/>这将把你所有的GMX、esGMX、GLP和乘数点转移到你的新账户<1/>只有在接收账户前没有抵押过GMX或GLP代币的情况下才支持转移<2/>转移是单向的，你将不能把抵押的代币转回发送账户"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
@@ -2465,11 +2465,11 @@ msgid "Profit price: {0} ${1}. This rule applies for the next {2}, until {3}."
 msgstr "盈利价格：{0}美元{1}此规则适用于接下来的{2}，直到{3}"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Projects developed by the GMX community. <0/>Please exercise caution when interacting with any app, apps are fully maintained by community developers."
+msgid "Projects developed by the ZMX community. <0/>Please exercise caution when interacting with any app, apps are fully maintained by community developers."
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Projects integrated with GMX."
+msgid "Projects integrated with ZMX."
 msgstr "与GMX整合的项目"
 
 #: src/pages/Dashboard/AssetDropdown.tsx
@@ -2536,7 +2536,7 @@ msgid "Receiver has not staked ZLP tokens before"
 msgstr "收款人未质押过GLP代币"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Receiver has not staked GMX tokens before"
+msgid "Receiver has not staked ZMX tokens before"
 msgstr "收款人未质押过GMX代币"
 
 #: src/components/Glp/GlpSwap.js
@@ -2645,7 +2645,7 @@ msgid "Reserved for Vesting"
 msgstr "保留授权"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Returns calculator for GMX and ZLP"
+msgid "Returns calculator for ZMX and ZLP"
 msgstr "GMX和GLP的收益计算器"
 
 #: src/pages/Stake/StakeV1.js
@@ -2744,7 +2744,7 @@ msgid "Sender has withdrawn all tokens from ZLP Vesting Vault"
 msgstr "发送者已从GLP授权金库中撤回所有代币"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Sender has withdrawn all tokens from GMX Vesting Vault"
+msgid "Sender has withdrawn all tokens from ZMX Vesting Vault"
 msgstr "发送者已从GMX授权金库中撤回所有代币"
 
 #: src/App/App.js
@@ -2854,15 +2854,15 @@ msgid "Stake"
 msgstr "质押"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake <0>GMX</0> and <1>ZLP</1> to earn rewards."
-msgstr "质押<0>GMX</0>和<1>ZLP</1>以获得奖励"
+msgid "Stake <0>ZMX</0> and <1>ZLP</1> to earn rewards."
+msgstr "质押<0>ZMX</0>和<1>ZLP</1>以获得奖励"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake GMX"
-msgstr "质押 GMX"
+msgid "Stake ZMX"
+msgstr "质押 ZMX"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake GMX Rewards"
+msgid "Stake ZMX Rewards"
 msgstr "质押GMX奖励"
 
 #: src/pages/Stake/StakeV2.js
@@ -3073,15 +3073,15 @@ msgid "Telegram Groups"
 msgstr "电报群"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for GMX Swaps monitoring"
+msgid "Telegram bot for ZMX Swaps monitoring"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for GMX position updates"
+msgid "Telegram bot for ZMX position updates"
 msgstr "更新GMX仓位的Telegram机器人"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for Open Interest on GMX"
+msgid "Telegram bot for Open Interest on ZMX"
 msgstr "GMX上未平仓合约的电报机器人"
 
 #: src/components/Footer/constants.ts
@@ -3089,7 +3089,7 @@ msgid "Terms and Conditions"
 msgstr "条款及细则"
 
 #: src/pages/Stake/StakeV1.js
-msgid "The <0>GMX migration</0> is in progress, please migrate your GMT, xGMT, GMT-USDG and xGMT-USDG tokens.<1/>USDG tokens will continue to function as before and do not need to be migrated."
+msgid "The <0>ZMX migration</0> is in progress, please migrate your GMT, xGMT, GMT-USDG and xGMT-USDG tokens.<1/>USDG tokens will continue to function as before and do not need to be migrated."
 msgstr "<0>GMX迁移</0>正在进行中,请迁移您的GMT, xGMT, GMT-USDG 和 xGMT-USDG 代币<1/>USDG 代币将继续像以前一样发挥作用，不需要迁移"
 
 #: src/components/Stake/GMXAprTooltip.tsx
@@ -3145,7 +3145,7 @@ msgid "The spread is > 1%, please ensure the trade details are acceptable before
 msgstr ""
 
 #: src/components/ModalViews/RedirectModal.js
-msgid "The website is a community deployed and maintained instance of the open source <0>GMX front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
+msgid "The website is a community deployed and maintained instance of the open source <0>ZMX front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
 msgstr "该网站是一个社区部署和维护的开放资源<0>GMX前端的实例</0>，在分布式、对等的<1>IPFS网络</1>上托管和服务"
 
 #: src/components/Exchange/SwapBox.js
@@ -3202,7 +3202,7 @@ msgid "To complete the transfer, you must switch your connected account to {rece
 msgstr "为了完成转移，你必须将你的连接账户切换到{receiver}"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "To purchase GMX on the {0} blockchain, please <0>change your network</0>."
+msgid "To purchase ZMX on the {0} blockchain, please <0>change your network</0>."
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -3320,7 +3320,7 @@ msgid "Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x levera
 msgstr ""
 
 #: src/components/Exchange/ExchangeBanner.js
-msgid "Trade on GMX and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
+msgid "Trade on ZMX and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
 msgstr "在GMX上进行交易，赢取<0>$250.000</0> 美元的奖金! 活动至11月30h, <1>点击这里</1> 了解更多"
 
 #: src/pages/Referrals/Referrals.js
@@ -3470,7 +3470,7 @@ msgid "Unstake"
 msgstr "解除质押"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Unstake GMX"
+msgid "Unstake ZMX"
 msgstr "GMX解除质押"
 
 #: src/pages/Stake/StakeV2.js
@@ -3570,11 +3570,11 @@ msgid "Vest with ZLP on Avalanche"
 msgstr "在Avalanche上授权GLP"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with GMX on Arbitrum"
+msgid "Vest with ZMX on Arbitrum"
 msgstr "在Arbitrum上授权GMX"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with GMX on Avalanche"
+msgid "Vest with ZMX on Avalanche"
 msgstr "在Avalanche上授权GMX"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
@@ -3582,7 +3582,7 @@ msgid "Vested ZLP not withdrawn"
 msgstr "归属的GLP未被撤回"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Vested GMX not withdrawn"
+msgid "Vested ZMX not withdrawn"
 msgstr "归属的GMX未被撤回"
 
 #: src/pages/Stake/StakeV2.js
@@ -3711,7 +3711,7 @@ msgid "Withdraw from ZLP Vault"
 msgstr "从GLP库中提领"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Withdraw from GMX Vault"
+msgid "Withdraw from ZMX Vault"
 msgstr "从GMX库中提领"
 
 #: src/pages/Stake/StakeV2.js
@@ -3751,7 +3751,7 @@ msgid "Yield Vaults"
 msgstr "产量库"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Yield simulator for GMX"
+msgid "Yield simulator for ZMX"
 msgstr "GMX的产量模拟器"
 
 #: src/pages/Stake/StakeV2.js
@@ -3763,7 +3763,7 @@ msgid "You are earning {nativeTokenSymbol} rewards with {0} tokens.<0/>Tokens: {
 msgstr "你正在用{0}代币赚取{nativeTokenSymbol}奖励。<0/>代币：{amountStr}"
 
 #: src/components/ModalViews/RedirectModal.js
-msgid "You are leaving GMX.io and will be redirected to a third party, independent website."
+msgid "You are leaving ZMX.io and will be redirected to a third party, independent website."
 msgstr "您正要离开GMX.io，并且将被重新导向到第三方独立网站"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
@@ -3942,7 +3942,7 @@ msgstr "{0}GLP以{1}{2}售出 !"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "{0} GMX tokens can be claimed, use the options under the Total Rewards section to claim them."
+msgid "{0} ZMX tokens can be claimed, use the options under the Total Rewards section to claim them."
 msgstr "{0}GMX代币可认领，使用总奖励下的选项以领取。"
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
@@ -3987,7 +3987,7 @@ msgstr "{0}在指令表中选择"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "{0} tokens have been converted to GMX from the {1} esGMX deposited for vesting."
+msgid "{0} tokens have been converted to ZMX from the {1} esGMX deposited for vesting."
 msgstr "{0}代币已经从存入的{1}esGMX中转换为GMX，以便归属。"
 
 #: src/components/Exchange/SwapBox.js

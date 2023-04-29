@@ -196,7 +196,7 @@ export default function ClaimEsGmx({ setPendingTxns }) {
   let initialStakingAmount;
   let nextStakingAmount;
 
-  let stakingToken = "staked GMX";
+  let stakingToken = "staked ZMX";
 
   const shouldShowStakingAmounts = false;
 
@@ -380,7 +380,7 @@ export default function ClaimEsGmx({ setPendingTxns }) {
                 isChecked={selectedOption === VEST_WITH_GMX_ARB}
                 setIsChecked={() => setSelectedOption(VEST_WITH_GMX_ARB)}
               >
-                <Trans>Vest with GMX on Arbitrum</Trans>
+                <Trans>Vest with ZMX on Arbitrum</Trans>
                 <img src={arbitrumIcon} alt="Arbitrum" />
               </Checkbox>
               <Checkbox
@@ -396,7 +396,7 @@ export default function ClaimEsGmx({ setPendingTxns }) {
                 isChecked={selectedOption === VEST_WITH_GMX_AVAX}
                 setIsChecked={() => setSelectedOption(VEST_WITH_GMX_AVAX)}
               >
-                <Trans>Vest with GMX on Avalanche</Trans>
+                <Trans>Vest with ZMX on Avalanche</Trans>
                 <img src={avaIcon} alt="Avalanche" />
               </Checkbox>
               <Checkbox

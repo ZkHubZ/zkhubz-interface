@@ -121,7 +121,7 @@ export default function DashboardV2() {
   const vaultAddress = getContract(chainId, "Vault");
   const glpManagerAddress = getContract(chainId, "GlpManager");
 
-  const gmxAddress = getContract(chainId, "GMX");
+  const gmxAddress = getContract(chainId, "ZMX");
   const glpAddress = getContract(chainId, "ZLP");
   const usdgAddress = getContract(chainId, "USDG");
 
@@ -500,7 +500,7 @@ export default function DashboardV2() {
                       handle={`$${formatAmount(tvl, USD_DECIMALS, 0, true)}`}
                       position="right-bottom"
                       renderContent={() => (
-                        <span>{t`Assets Under Management: GMX staked (All chains) + ZLP pool (${chainName}).`}</span>
+                        <span>{t`Assets Under Management: ZMX staked (All chains) + ZLP pool (${chainName}).`}</span>
                       )}
                     />
                   </div>
@@ -689,14 +689,14 @@ export default function DashboardV2() {
                   <div className="App-card-title">
                     <div className="App-card-title-mark">
                       <div className="App-card-title-mark-icon">
-                        <img src={currentIcons.gmx} width="40" alt="GMX Token Icon" />
+                        <img src={currentIcons.gmx} width="40" alt="ZMX Token Icon" />
                       </div>
                       <div className="App-card-title-mark-info">
-                        <div className="App-card-title-mark-title">GMX</div>
-                        <div className="App-card-title-mark-subtitle">GMX</div>
+                        <div className="App-card-title-mark-title">ZMX</div>
+                        <div className="App-card-title-mark-subtitle">ZMX</div>
                       </div>
                       <div>
-                        <AssetDropdown assetSymbol="GMX" />
+                        <AssetDropdown assetSymbol="ZMX" />
                       </div>
                     </div>
                   </div>
@@ -735,7 +735,7 @@ export default function DashboardV2() {
                       <div className="label">
                         <Trans>Supply</Trans>
                       </div>
-                      <div>{formatAmount(totalGmxSupply, GMX_DECIMALS, 0, true)} GMX</div>
+                      <div>{formatAmount(totalGmxSupply, GMX_DECIMALS, 0, true)} ZMX</div>
                     </div>
                     <div className="App-card-row">
                       <div className="label">

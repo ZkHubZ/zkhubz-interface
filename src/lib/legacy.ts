@@ -1414,7 +1414,7 @@ export function getProcessedData(
 
 export function getPageTitle(data) {
   return `${data} | Decentralized
-  Perpetual Exchange | GMX`;
+  Perpetual Exchange | ZMX`;
 }
 
 export function isHashZero(value) {

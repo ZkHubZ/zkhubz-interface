@@ -50,7 +50,7 @@ export default function BeginAccountTransfer(props) {
     parsedReceiver = receiver;
   }
 
-  const gmxAddress = getContract(chainId, "GMX");
+  const gmxAddress = getContract(chainId, "ZMX");
   const gmxVesterAddress = getContract(chainId, "GmxVester");
   const glpVesterAddress = getContract(chainId, "GlpVester");
 
@@ -132,7 +132,7 @@ export default function BeginAccountTransfer(props) {
       return t`Wallet is not connected`;
     }
     if (hasVestedGmx) {
-      return t`Vested GMX not withdrawn`;
+      return t`Vested ZMX not withdrawn`;
     }
     if (hasVestedGlp) {
       return t`Vested ZLP not withdrawn`;
@@ -178,7 +178,7 @@ export default function BeginAccountTransfer(props) {
       return error;
     }
     if (needApproval) {
-      return t`Approve GMX`;
+      return t`Approve ZMX`;
     }
     if (isApproving) {
       return t`Approving...`;
@@ -243,9 +243,9 @@ export default function BeginAccountTransfer(props) {
           <Trans>
             Please only use this for full account transfers.
             <br />
-            This will transfer all your GMX, esGMX, ZLP and Multiplier Points to your new account.
+            This will transfer all your ZMX, esGMX, ZLP and Multiplier Points to your new account.
             <br />
-            Transfers are only supported if the receiving account has not staked GMX or ZLP tokens before.
+            Transfers are only supported if the receiving account has not staked ZMX or ZLP tokens before.
             <br />
             Transfers are one-way, you will not be able to transfer staked tokens back to the sending account.
           </Trans>
@@ -275,13 +275,13 @@ export default function BeginAccountTransfer(props) {
           </div>
           <div className="BeginAccountTransfer-validations">
             <ValidationRow isValid={!hasVestedGmx}>
-              <Trans>Sender has withdrawn all tokens from GMX Vesting Vault</Trans>
+              <Trans>Sender has withdrawn all tokens from ZMX Vesting Vault</Trans>
             </ValidationRow>
             <ValidationRow isValid={!hasVestedGlp}>
               <Trans>Sender has withdrawn all tokens from ZLP Vesting Vault</Trans>
             </ValidationRow>
             <ValidationRow isValid={!hasStakedGmx}>
-              <Trans>Receiver has not staked GMX tokens before</Trans>
+              <Trans>Receiver has not staked ZMX tokens before</Trans>
             </ValidationRow>
             <ValidationRow isValid={!hasStakedGlp}>
               <Trans>Receiver has not staked ZLP tokens before</Trans>

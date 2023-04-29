@@ -1,8 +1,8 @@
 import { ARBITRUM, AVALANCHE } from "config/chains";
 import { getContract } from "config/contracts";
 
-const ARBITRUM_GMX = getContract(ARBITRUM, "GMX").toLowerCase();
-const AVALANCHE_GMX = getContract(AVALANCHE, "GMX").toLowerCase();
+const ARBITRUM_GMX = getContract(ARBITRUM, "ZMX").toLowerCase();
+const AVALANCHE_GMX = getContract(AVALANCHE, "ZMX").toLowerCase();
 
 type Exchange = {
   name: string;
@@ -38,8 +38,8 @@ export const FIAT_GATEWAYS: Exchange[] = [
     name: "Banxa",
     icon: "ic_banxa.svg",
     links: {
-      [ARBITRUM]: "https://gmx.banxa.com/?coinType=GMX&fiatType=USD&fiatAmount=500&blockchain=arbitrum",
-      [AVALANCHE]: "https://gmx.banxa.com/?coinType=GMX&fiatType=USD&fiatAmount=500&blockchain=avalanche",
+      [ARBITRUM]: "https://gmx.banxa.com/?coinType=ZMX&fiatType=USD&fiatAmount=500&blockchain=arbitrum",
+      [AVALANCHE]: "https://gmx.banxa.com/?coinType=ZMX&fiatType=USD&fiatAmount=500&blockchain=avalanche",
     },
   },
   {
@@ -47,7 +47,7 @@ export const FIAT_GATEWAYS: Exchange[] = [
     icon: "ic_tansak.svg",
     links: {
       [ARBITRUM]:
-        "https://global.transak.com/?apiKey=28a15a9b-d94e-4944-99cc-6aa35b45cc74&networks=arbitrum&defaultCryptoCurrency=GMX&isAutoFillUserData=true&hideMenu=true&isFeeCalculationHidden=true",
+        "https://global.transak.com/?apiKey=28a15a9b-d94e-4944-99cc-6aa35b45cc74&networks=arbitrum&defaultCryptoCurrency=ZMX&isAutoFillUserData=true&hideMenu=true&isFeeCalculationHidden=true",
     },
   },
 ];
@@ -194,16 +194,16 @@ export const CENTRALISED_EXCHANGES: Exchange[] = [
     name: "Bybit",
     icon: "ic_bybit.svg",
     links: {
-      [ARBITRUM]: "https://www.bybit.com/en-US/trade/spot/GMX/USDT",
-      [AVALANCHE]: "https://www.bybit.com/en-US/trade/spot/GMX/USDT",
+      [ARBITRUM]: "https://www.bybit.com/en-US/trade/spot/ZMX/USDT",
+      [AVALANCHE]: "https://www.bybit.com/en-US/trade/spot/ZMX/USDT",
     },
   },
   {
     name: "Kucoin",
     icon: "ic_kucoin.svg",
     links: {
-      [ARBITRUM]: "https://www.kucoin.com/trade/GMX-USDT",
-      [AVALANCHE]: "https://www.kucoin.com/trade/GMX-USDT",
+      [ARBITRUM]: "https://www.kucoin.com/trade/ZMX-USDT",
+      [AVALANCHE]: "https://www.kucoin.com/trade/ZMX-USDT",
     },
   },
   {
@@ -221,8 +221,8 @@ export const DECENTRALISED_AGGRIGATORS: Exchange[] = [
     name: "1inch",
     icon: "ic_1inch.svg",
     links: {
-      [ARBITRUM]: "https://app.1inch.io/#/42161/unified/swap/ETH/GMX",
-      [AVALANCHE]: "https://app.1inch.io/#/43114/unified/swap/AVAX/GMX",
+      [ARBITRUM]: "https://app.1inch.io/#/42161/unified/swap/ETH/ZMX",
+      [AVALANCHE]: "https://app.1inch.io/#/43114/unified/swap/AVAX/ZMX",
     },
   },
   {
@@ -253,8 +253,8 @@ export const DECENTRALISED_AGGRIGATORS: Exchange[] = [
     name: "OpenOcean",
     icon: "ic_openocean.svg",
     links: {
-      [ARBITRUM]: "https://app.openocean.finance/CLASSIC#/ARBITRUM/ETH/GMX",
-      [AVALANCHE]: "https://app.openocean.finance/CLASSIC#/AVAX/AVAX/GMX",
+      [ARBITRUM]: "https://app.openocean.finance/CLASSIC#/ARBITRUM/ETH/ZMX",
+      [AVALANCHE]: "https://app.openocean.finance/CLASSIC#/AVAX/AVAX/ZMX",
     },
   },
   {
@@ -289,8 +289,8 @@ export const DECENTRALISED_AGGRIGATORS: Exchange[] = [
     name: "Odos",
     icon: "ic_odos.png",
     links: {
-      [ARBITRUM]: "https://app.odos.xyz/swap/42161/ETH/GMX",
-      [AVALANCHE]: "https://app.odos.xyz/swap/43114/AVAX/GMX",
+      [ARBITRUM]: "https://app.odos.xyz/swap/42161/ETH/ZMX",
+      [AVALANCHE]: "https://app.odos.xyz/swap/43114/AVAX/ZMX",
     },
   },
 ];

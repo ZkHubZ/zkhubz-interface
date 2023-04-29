@@ -30,19 +30,19 @@ msgid "<0/>Profit price: {0} ${1}. This rule applies for the next {2}, until {3}
 msgstr "<0/>Prix du profit: {0} ${1}. Cette règle s'applique au prochain {2}, jusqu'à {3}."
 
 #: src/App/App.js
-msgid "<0>Install Coinbase Wallet</0> to start using GMX."
+msgid "<0>Install Coinbase Wallet</0> to start using ZMX."
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install Coinbase Wallet</0>, and use GMX with its built-in browser."
+msgid "<0>Install Coinbase Wallet</0>, and use ZMX with its built-in browser."
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install MetaMask</0> to start using GMX."
+msgid "<0>Install MetaMask</0> to start using ZMX."
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install MetaMask</0>, and use GMX with its built-in browser."
+msgid "<0>Install MetaMask</0>, and use ZMX with its built-in browser."
 msgstr ""
 
 #: src/components/Exchange/OrdersToa.js
@@ -67,8 +67,8 @@ msgid "<0>The price that orders can be executed at may differ slightly from the 
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to GMX will remain as GMX tokens.<3/><4/>To claim GMX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
-msgstr "<0>Cela retirera et libérera tous les tokens et mettra en pause l'acquisition par vesting.<1/><2/>Les tokens esGMX qui ont été convertis en GMX resteront des tokens GMX.<3/><4/>Pour réclamer les tokens GMX sans effectuer de retrait, utilisez le bouton \"Réclamer\" dans la section Récompenses totales.<5/><6/></0>\""
+msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to ZMX will remain as ZMX tokens.<3/><4/>To claim ZMX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
+msgstr "<0>Cela retirera et libérera tous les tokens et mettra en pause l'acquisition par vesting.<1/><2/>Les tokens esGMX qui ont été convertis en ZMX resteront des tokens ZMX.<3/><4/>Pour réclamer les tokens ZMX sans effectuer de retrait, utilisez le bouton \"Réclamer\" dans la section Récompenses totales.<5/><6/></0>\""
 
 #: src/pages/Dashboard/DashboardV2.js
 msgid "<0>Total value of tokens in ZLP pool ({chainName}).</0><1>Other websites may show a higher value as they add positions' collaterals to the ZLP pool.</1>"
@@ -272,8 +272,8 @@ msgstr "L'approbation a été annulée"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 #: src/pages/Stake/StakeV2.js
-msgid "Approve GMX"
-msgstr "Approuver GMX"
+msgid "Approve ZMX"
+msgstr "Approuver ZMX"
 
 #: src/components/Exchange/PositionEditor.js
 #: src/components/Exchange/SwapBox.js
@@ -288,8 +288,8 @@ msgid "Approve {stakingTokenSymbol}"
 msgstr "Approuver {stakingTokenSymbol}"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Approving GMX..."
-msgstr "Approbation de GMX..."
+msgid "Approving ZMX..."
+msgstr "Approbation de ZMX..."
 
 #: src/components/Exchange/PositionEditor.js
 #: src/components/Exchange/SwapBox.js
@@ -321,7 +321,7 @@ msgid "Assets Under Management"
 msgstr "Actifs sous gestion"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "Assets Under Management: GMX staked (All chains) + ZLP pool ({chainName})."
+msgid "Assets Under Management: ZMX staked (All chains) + ZLP pool ({chainName})."
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -429,47 +429,47 @@ msgid "Buy ZLP"
 msgstr "Acheter ZLP"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Buy GMX"
-msgstr "Acheter GMX"
+msgid "Buy ZMX"
+msgstr "Acheter ZMX"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from Traderjoe:"
+msgid "Buy ZMX from Traderjoe:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from Uniswap (make sure to select Arbitrum):"
+msgid "Buy ZMX from Uniswap (make sure to select Arbitrum):"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from a Decentralized Exchange"
+msgid "Buy ZMX from a Decentralized Exchange"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from centralized exchanges:"
+msgid "Buy ZMX from centralized exchanges:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from centralized services"
+msgid "Buy ZMX from centralized services"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX on {0}"
+msgid "Buy ZMX on {0}"
 msgstr ""
 
 #: src/pages/Buy/Buy.js
-msgid "Buy GMX or ZLP"
-msgstr "Acheter GMX ou ZLP"
+msgid "Buy ZMX or ZLP"
+msgstr "Acheter ZMX ou ZLP"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX using Decentralized Exchange Aggregators:"
+msgid "Buy ZMX using Decentralized Exchange Aggregators:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX using FIAT gateways:"
+msgid "Buy ZMX using FIAT gateways:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX using any token from any network:"
+msgid "Buy ZMX using any token from any network:"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -578,8 +578,8 @@ msgstr "Réclamer"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Claim GMX Rewards"
-msgstr "Réclamer les récompenses GMX"
+msgid "Claim ZMX Rewards"
+msgstr "Réclamer les récompenses ZMX"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Claim Rewards"
@@ -809,8 +809,8 @@ msgid "Continue"
 msgstr "Continuer"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Convert esGMX tokens to GMX tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
-msgstr "Convertir les tokens esGMX en tokens GMX.<0/>Veuillez lire les  <1>détails sur le vesting</1> avant d'utiliser les coffres."
+msgid "Convert esGMX tokens to ZMX tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
+msgstr "Convertir les tokens esGMX en tokens ZMX.<0/>Veuillez lire les  <1>détails sur le vesting</1> avant d'utiliser les coffres."
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -931,8 +931,8 @@ msgid "Dashboard"
 msgstr "Tableau de bord"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Dashboard for GMX referral stats"
-msgstr "Tableau de bord pour les statistiques de parrainage GMX"
+msgid "Dashboard for ZMX referral stats"
+msgstr "Tableau de bord pour les statistiques de parrainage ZMX"
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Dashboards"
@@ -1254,13 +1254,13 @@ msgstr "Prix d'entrée"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Escrowed GMX"
-msgstr "GMX sous séquestre"
+msgid "Escrowed ZMX"
+msgstr "ZMX sous séquestre"
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Stake/GMXAprTooltip.tsx
-msgid "Escrowed GMX APR"
-msgstr "Taux de rendement annuels GMX sous séquestre"
+msgid "Escrowed ZMX APR"
+msgstr "Taux de rendement annuels ZMX sous séquestre"
 
 #: src/pages/OrdersOverview/OrdersOverview.js
 msgid "Execute"
@@ -1310,8 +1310,8 @@ msgid "Fees are high to swap from {0} to {1}. <0/>{2} is needed for collateral."
 msgstr "Les frais sont élevés pour changer de {0} vers {1}. <0/>{2} est nécessaire pour le Collatéral."
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Fees generated by GMX"
-msgstr "Commissions générées par GMX"
+msgid "Fees generated by ZMX"
+msgstr "Commissions générées par ZMX"
 
 #: src/components/Glp/GlpSwap.js
 msgid "Fees may vary depending on which asset you sell ZLP for. <0/>Enter the amount of ZLP you want to redeem in the order form, then check here to compare fees."
@@ -1379,7 +1379,7 @@ msgid "ZLP Vault"
 msgstr "Coffre ZLP"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "ZLP and GMX autocompounding vaults"
+msgid "ZLP and ZMX autocompounding vaults"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
@@ -1399,90 +1399,90 @@ msgid "ZLP sell disabled, pending {0} upgrade"
 msgstr "Vente ZLP désactivé, en attente de {0} actualisations"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Announcements and Updates"
-msgstr "Annonces et mises à jour concernant GMX"
+msgid "ZMX Announcements and Updates"
+msgstr "Annonces et mises à jour concernant ZMX"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Blueberry NFTs"
-msgstr "NFT Bleuets GMX"
+msgid "ZMX Blueberry NFTs"
+msgstr "NFT Bleuets ZMX"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Governance Page"
-msgstr "Page de gouvernance GMX"
+msgid "ZMX Governance Page"
+msgstr "Page de gouvernance ZMX"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Pages"
-msgstr "Pages GMX"
+msgid "ZMX Pages"
+msgstr "Pages ZMX"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Perpetuals Data"
-msgstr "Données sur les Perpetuals de GMX"
+msgid "ZMX Perpetuals Data"
+msgstr "Données sur les Perpetuals de ZMX"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Proposals Voting page"
-msgstr "Page de vote pour les propositions sur GMX"
+msgid "ZMX Proposals Voting page"
+msgstr "Page de vote pour les propositions sur ZMX"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Stats Page"
-msgstr "Page des statistiques GMX"
+msgid "ZMX Stats Page"
+msgstr "Page des statistiques ZMX"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "GMX Vault"
-msgstr "Coffre GMX"
+msgid "ZMX Vault"
+msgstr "Coffre ZMX"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Weekly Updates"
-msgstr "Mises à jour hebdomadaires GMX"
+msgid "ZMX Weekly Updates"
+msgstr "Mises à jour hebdomadaires ZMX"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "GMX bonds can be bought on Bond Protocol with a discount and a small vesting period:"
+msgid "ZMX bonds can be bought on Bond Protocol with a discount and a small vesting period:"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX community discussion"
-msgstr "Discussion de la communauté GMX"
+msgid "ZMX community discussion"
+msgstr "Discussion de la communauté ZMX"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX dashboards and analytics."
-msgstr "Tableaux de bord et analyses GMX."
+msgid "ZMX dashboards and analytics."
+msgstr "Tableaux de bord et analyses ZMX."
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX ecosystem pages."
-msgstr "Pages de l'écosystème GMX."
+msgid "ZMX ecosystem pages."
+msgstr "Pages de l'écosystème ZMX."
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX explorer for stats and traders"
-msgstr "Explorateur GMX pour les statistiques et les traders"
+msgid "ZMX explorer for stats and traders"
+msgstr "Explorateur ZMX pour les statistiques et les traders"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX fundamentals"
-msgstr "Principes fondamentaux de GMX"
+msgid "ZMX fundamentals"
+msgstr "Principes fondamentaux de ZMX"
 
 #: src/pages/Home/Home.js
-msgid "GMX is currently live on Arbitrum and Avalanche."
-msgstr "GMX est en émission direct sur Arbitrum et Avalanche."
+msgid "ZMX is currently live on Arbitrum and Avalanche."
+msgstr "ZMX est en émission direct sur Arbitrum et Avalanche."
 
 #: src/pages/Jobs/Jobs.js
-msgid "GMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
-msgstr "GMX ne recherche pas activement de nouveaux recrutements pour le moment. Toutefois, si vous pensez pouvoir contribuer au projet, veuillez envoyer un courriel à l'adresse suivante <0>jobs@gmx.io</0>."
+msgid "ZMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
+msgstr "ZMX ne recherche pas activement de nouveaux recrutements pour le moment. Toutefois, si vous pensez pouvoir contribuer au projet, veuillez envoyer un courriel à l'adresse suivante <0>jobs@gmx.io</0>."
 
 #: src/components/TokenCard/TokenCard.js
-msgid "GMX is the utility and governance token. Accrues 30% of the platform's generated fees."
-msgstr "GMX est le token d'utilité et de gouvernance. Accumule 30% des frais générés par la plateforme."
+msgid "ZMX is the utility and governance token. Accrues 30% of the platform's generated fees."
+msgstr "ZMX est le token d'utilité et de gouvernance. Accumule 30% des frais générés par la plateforme."
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX staking calculator"
-msgstr "Calculateur de staking GMX"
+msgid "ZMX staking calculator"
+msgstr "Calculateur de staking ZMX"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX staking rewards updates and insights"
-msgstr "Mises à jour et aperçu des récompenses du staking de GMX"
+msgid "ZMX staking rewards updates and insights"
+msgstr "Mises à jour et aperçu des récompenses du staking de ZMX"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "GMX transfers not yet enabled"
-msgstr "Les transferts GMX ne sont pas encore activés"
+msgid "ZMX transfers not yet enabled"
+msgstr "Les transferts ZMX ne sont pas encore activés"
 
 #: src/components/Referrals/AddAffiliateCode.js
 msgid "Generate Referral Code"
@@ -1493,8 +1493,8 @@ msgid "Generating shareable image..."
 msgstr "Création d'une image partageable..."
 
 #: src/pages/Referrals/Referrals.js
-msgid "Get fee discounts and earn rebates through the GMX referral program.<0/>For more information, please read the <1>referral program details</1>."
-msgstr "Obtenez des réductions de frais et gagnez des remises grâce au programme de parrainage GMX.<0/>Pour plus d'informations, veuillez lire <1>détails sur le programme de parrainage </1>."
+msgid "Get fee discounts and earn rebates through the ZMX referral program.<0/>For more information, please read the <1>referral program details</1>."
+msgstr "Obtenez des réductions de frais et gagnez des remises grâce au programme de parrainage ZMX.<0/>Pour plus d'informations, veuillez lire <1>détails sur le programme de parrainage </1>."
 
 #: src/components/Header/HomeHeaderLinks.tsx
 msgid "Governance"
@@ -1655,8 +1655,8 @@ msgid "Invalid token indexToken: \"{0}\" collateralToken: \"{1}\""
 msgstr "Token invalide indiceТокен: \"{0}\" collatéralToken: \"{1}\""
 
 #: src/pages/Jobs/Jobs.js
-msgid "Job openings at GMX."
-msgstr "Offres d'emploi chez GMX."
+msgid "Job openings at ZMX."
+msgstr "Offres d'emploi chez ZMX."
 
 #: src/pages/Jobs/Jobs.js
 msgid "Jobs"
@@ -1681,8 +1681,8 @@ msgid "Leaderboard"
 msgstr "Tableau des leaders"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Leaderboard for GMX traders"
-msgstr "Tableau d'affichage pour les traders GMX"
+msgid "Leaderboard for ZMX traders"
+msgstr "Tableau d'affichage pour les traders ZMX"
 
 #: src/components/Exchange/PositionEditor.js
 msgid "Leave at least {0} ETH for gas"
@@ -2128,8 +2128,8 @@ msgid "No open positions"
 msgstr "Pas de position ouverte"
 
 #: src/pages/Jobs/Jobs.js
-msgid "No open positions at GMX currently"
-msgstr "Aucune position ouverte actuellement chez GMX"
+msgid "No open positions at ZMX currently"
+msgstr "Aucune position ouverte actuellement chez ZMX"
 
 #: src/pages/OrdersOverview/OrdersOverview.js
 msgid "No position"
@@ -2336,8 +2336,8 @@ msgid "Please input a referral code to benefit from fee discounts."
 msgstr "Veuillez saisir un code de parrainage pour bénéficier des réductions de frais."
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Please only use this for full account transfers.<0/>This will transfer all your GMX, esGMX, ZLP and Multiplier Points to your new account.<1/>Transfers are only supported if the receiving account has not staked GMX or ZLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
-msgstr "Veuillez utiliser ceci uniquement pour les transferts de comptes complets.<0/>Cela permettra de transférer tous vos GMX, esGMX, ZLP et points multiplicateurs vers votre nouveau compte.<1/>Les transferts ne sont pris en charge que si le compte destinataire n'a pas encore staké de tokens GMX ou ZLP.<2/>Les transferts sont à sens unique, vous ne pourrez pas retransférer les tokens mis en jeu vers le compte émetteur."
+msgid "Please only use this for full account transfers.<0/>This will transfer all your ZMX, esGMX, ZLP and Multiplier Points to your new account.<1/>Transfers are only supported if the receiving account has not staked ZMX or ZLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
+msgstr "Veuillez utiliser ceci uniquement pour les transferts de comptes complets.<0/>Cela permettra de transférer tous vos ZMX, esGMX, ZLP et points multiplicateurs vers votre nouveau compte.<1/>Les transferts ne sont pris en charge que si le compte destinataire n'a pas encore staké de tokens ZMX ou ZLP.<2/>Les transferts sont à sens unique, vous ne pourrez pas retransférer les tokens mis en jeu vers le compte émetteur."
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
 msgid "Please switch your network to Arbitrum."
@@ -2465,12 +2465,12 @@ msgid "Profit price: {0} ${1}. This rule applies for the next {2}, until {3}."
 msgstr "Prix du profit: {0} ${1}. Cette règle s'applique au prochain {2}, jusqu'à {3}."
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Projects developed by the GMX community. <0/>Please exercise caution when interacting with any app, apps are fully maintained by community developers."
+msgid "Projects developed by the ZMX community. <0/>Please exercise caution when interacting with any app, apps are fully maintained by community developers."
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Projects integrated with GMX."
-msgstr "Projets intégrés à GMX\"."
+msgid "Projects integrated with ZMX."
+msgstr "Projets intégrés à ZMX\"."
 
 #: src/pages/Dashboard/AssetDropdown.tsx
 msgid "Proof of Reserves"
@@ -2536,7 +2536,7 @@ msgid "Receiver has not staked ZLP tokens before"
 msgstr "Le destinataire n'a jamais staké de tokens ZLP auparavant"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Receiver has not staked GMX tokens before"
+msgid "Receiver has not staked ZMX tokens before"
 msgstr "Le destinataire n'a jamais staké de tokens ZLP auparavant"
 
 #: src/components/Glp/GlpSwap.js
@@ -2645,8 +2645,8 @@ msgid "Reserved for Vesting"
 msgstr "Réservé pour le vesting"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Returns calculator for GMX and ZLP"
-msgstr "Calculatrice de rendements pour GMX et ZLP"
+msgid "Returns calculator for ZMX and ZLP"
+msgstr "Calculatrice de rendements pour ZMX et ZLP"
 
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
@@ -2744,7 +2744,7 @@ msgid "Sender has withdrawn all tokens from ZLP Vesting Vault"
 msgstr "L'expéditeur a retiré tous les tokens du coffre de Vesting ZLP."
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Sender has withdrawn all tokens from GMX Vesting Vault"
+msgid "Sender has withdrawn all tokens from ZMX Vesting Vault"
 msgstr "L'expéditeur a retiré tous les tokens du coffre de Vesting ZLP."
 
 #: src/App/App.js
@@ -2854,16 +2854,16 @@ msgid "Stake"
 msgstr "Staker"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake <0>GMX</0> and <1>ZLP</1> to earn rewards."
-msgstr "Staker <0>GMX</0> et <1>ZLP</1> pour gagner des récompenses."
+msgid "Stake <0>ZMX</0> and <1>ZLP</1> to earn rewards."
+msgstr "Staker <0>ZMX</0> et <1>ZLP</1> pour gagner des récompenses."
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake GMX"
-msgstr "Staker GMX"
+msgid "Stake ZMX"
+msgstr "Staker ZMX"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake GMX Rewards"
-msgstr "Staker les récompenses de GMX"
+msgid "Stake ZMX Rewards"
+msgstr "Staker les récompenses de ZMX"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Stake Multiplier Points"
@@ -3073,24 +3073,24 @@ msgid "Telegram Groups"
 msgstr "Groupes Telegram"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for GMX Swaps monitoring"
+msgid "Telegram bot for ZMX Swaps monitoring"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for GMX position updates"
-msgstr "Bot telegram pour les mises à jour des positions sur GMX"
+msgid "Telegram bot for ZMX position updates"
+msgstr "Bot telegram pour les mises à jour des positions sur ZMX"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for Open Interest on GMX"
-msgstr "Bot Telegram pour l'intérêt ouvert sur GMX"
+msgid "Telegram bot for Open Interest on ZMX"
+msgstr "Bot Telegram pour l'intérêt ouvert sur ZMX"
 
 #: src/components/Footer/constants.ts
 msgid "Terms and Conditions"
 msgstr "Termes et conditions"
 
 #: src/pages/Stake/StakeV1.js
-msgid "The <0>GMX migration</0> is in progress, please migrate your GMT, xGMT, GMT-USDG and xGMT-USDG tokens.<1/>USDG tokens will continue to function as before and do not need to be migrated."
-msgstr "La <0>migration GMX</0>est en cours, veuillez migrer vos tokens GMT, xGMT, GMT-USDG et xGMT-USDG.<1/>Les tokens USDG continueront à fonctionner comme avant et ne doivent pas être transférés."
+msgid "The <0>ZMX migration</0> is in progress, please migrate your GMT, xGMT, GMT-USDG and xGMT-USDG tokens.<1/>USDG tokens will continue to function as before and do not need to be migrated."
+msgstr "La <0>migration ZMX</0>est en cours, veuillez migrer vos tokens GMT, xGMT, GMT-USDG et xGMT-USDG.<1/>Les tokens USDG continueront à fonctionner comme avant et ne doivent pas être transférés."
 
 #: src/components/Stake/GMXAprTooltip.tsx
 msgid "The Boosted APR is from your staked Multiplier Points."
@@ -3145,8 +3145,8 @@ msgid "The spread is > 1%, please ensure the trade details are acceptable before
 msgstr ""
 
 #: src/components/ModalViews/RedirectModal.js
-msgid "The website is a community deployed and maintained instance of the open source <0>GMX front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
-msgstr "Le site web est une instance open source du <0>GMX front-end</0>, déployée et maintenue par la communauté, hébergé et servi sur le réseau distribué, pair-à-pair <1>Réseau IPFS</1>."
+msgid "The website is a community deployed and maintained instance of the open source <0>ZMX front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
+msgstr "Le site web est une instance open source du <0>ZMX front-end</0>, déployée et maintenue par la communauté, hébergé et servi sur le réseau distribué, pair-à-pair <1>Réseau IPFS</1>."
 
 #: src/components/Exchange/SwapBox.js
 msgid "There are more longs than shorts, borrow fees for shorting is currently zero"
@@ -3202,7 +3202,7 @@ msgid "To complete the transfer, you must switch your connected account to {rece
 msgstr "Pour effectuer le transfert, vous devez passer votre compte connecté à {receiver}."
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "To purchase GMX on the {0} blockchain, please <0>change your network</0>."
+msgid "To purchase ZMX on the {0} blockchain, please <0>change your network</0>."
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -3320,8 +3320,8 @@ msgid "Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x levera
 msgstr ""
 
 #: src/components/Exchange/ExchangeBanner.js
-msgid "Trade on GMX and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
-msgstr "Échanger sur GMX et gagner <0>$250.000</0> de prix ! Jusqu'au 30 novembre, <1> cliquer ici</1>, pour en savoir plus.\""
+msgid "Trade on ZMX and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
+msgstr "Échanger sur ZMX et gagner <0>$250.000</0> de prix ! Jusqu'au 30 novembre, <1> cliquer ici</1>, pour en savoir plus.\""
 
 #: src/pages/Referrals/Referrals.js
 msgid "Traders"
@@ -3470,8 +3470,8 @@ msgid "Unstake"
 msgstr "Arrêter le Staking"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Unstake GMX"
-msgstr "Arrêter le staking de GMX"
+msgid "Unstake ZMX"
+msgstr "Arrêter le staking de ZMX"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Unstake completed!"
@@ -3570,20 +3570,20 @@ msgid "Vest with ZLP on Avalanche"
 msgstr "Vester avec ZLP sur Avalanche"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with GMX on Arbitrum"
-msgstr "Vester avec GMX sur Arbitrum"
+msgid "Vest with ZMX on Arbitrum"
+msgstr "Vester avec ZMX sur Arbitrum"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with GMX on Avalanche"
-msgstr "Vester avec GMX sur Avalanche"
+msgid "Vest with ZMX on Avalanche"
+msgstr "Vester avec ZMX sur Avalanche"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 msgid "Vested ZLP not withdrawn"
 msgstr "ZLP vesté non retiré"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Vested GMX not withdrawn"
-msgstr "GMX vesté non retiré"
+msgid "Vested ZMX not withdrawn"
+msgstr "ZMX vesté non retiré"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -3711,8 +3711,8 @@ msgid "Withdraw from ZLP Vault"
 msgstr "Retirer du coffre ZLP"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Withdraw from GMX Vault"
-msgstr "Retirer du coffre GMX"
+msgid "Withdraw from ZMX Vault"
+msgstr "Retirer du coffre ZMX"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Withdraw submitted."
@@ -3751,8 +3751,8 @@ msgid "Yield Vaults"
 msgstr "Coffres de Rendements"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Yield simulator for GMX"
-msgstr "Simulateur de rendement GMX"
+msgid "Yield simulator for ZMX"
+msgstr "Simulateur de rendement ZMX"
 
 #: src/pages/Stake/StakeV2.js
 msgid "You are earning {0}% more {nativeTokenSymbol} rewards using {1} Staked Multiplier Points."
@@ -3763,8 +3763,8 @@ msgid "You are earning {nativeTokenSymbol} rewards with {0} tokens.<0/>Tokens: {
 msgstr "Vous gagnez des récompenses {nativeTokenSymbol} avec {0} tokens.<0/> Tokens: {amountStr}."
 
 #: src/components/ModalViews/RedirectModal.js
-msgid "You are leaving GMX.io and will be redirected to a third party, independent website."
-msgstr "Vous quittez GMX.io et serez redirigé vers un site Web tiers et indépendant."
+msgid "You are leaving ZMX.io and will be redirected to a third party, independent website."
+msgstr "Vous quittez ZMX.io et serez redirigé vers un site Web tiers et indépendant."
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "You can buy AVAX directly on <0>Avalanche</0> using these options:"
@@ -3942,8 +3942,8 @@ msgstr "{0} ZLP a été vendu pour {1} {2}!"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "{0} GMX tokens can be claimed, use the options under the Total Rewards section to claim them."
-msgstr "{0} Les tokens GMX peuvent être réclamés, utilisez les options de la section Récompenses Totales pour les réclamer."
+msgid "{0} ZMX tokens can be claimed, use the options under the Total Rewards section to claim them."
+msgstr "{0} Les tokens ZMX peuvent être réclamés, utilisez les options de la section Récompenses Totales pour les réclamer."
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
 msgid "{0} Pool Capacity Reached"
@@ -3987,8 +3987,8 @@ msgstr "{0} sélectionné dans le formulaire d'ordre"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "{0} tokens have been converted to GMX from the {1} esGMX deposited for vesting."
-msgstr "Les tokens {0} ont été convertis en GMX depuis les {1} esGMX déposés pour le vesting."
+msgid "{0} tokens have been converted to ZMX from the {1} esGMX deposited for vesting."
+msgstr "Les tokens {0} ont été convertis en ZMX depuis les {1} esGMX déposés pour le vesting."
 
 #: src/components/Exchange/SwapBox.js
 msgid "{0} {1} not supported"
