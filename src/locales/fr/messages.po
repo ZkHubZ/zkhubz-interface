@@ -59,8 +59,8 @@ msgid "<0>Return to </0><1>Homepage</1> <2>or </2> <3>Trade</3>"
 msgstr "<0>Retourner à </0><1>la page d'accueil</1> <2>ou </2> <3>échanger</3>"
 
 #: src/components/Glp/SwapErrorModal.tsx
-msgid "<0>The pool's capacity has been reached for {0}. Please use another token to buy GLP.</0><1>Check the \"Save on Fees\" section for tokens with the lowest fees.</1>"
-msgstr "<0>La capacité du pool a été atteinte pour {0}. Veuillez utiliser un autre token pour acheter GLP.</0><1>Vérifier la section \"économiser sur les frais\" pour les tokens ayant les meilleur frais.</1>"
+msgid "<0>The pool's capacity has been reached for {0}. Please use another token to buy ZLP.</0><1>Check the \"Save on Fees\" section for tokens with the lowest fees.</1>"
+msgstr "<0>La capacité du pool a été atteinte pour {0}. Veuillez utiliser un autre token pour acheter ZLP.</0><1>Vérifier la section \"économiser sur les frais\" pour les tokens ayant les meilleur frais.</1>"
 
 #: src/components/Exchange/OrdersList.js
 msgid "<0>The price that orders can be executed at may differ slightly from the chart price, as market orders update oracle prices, while limit/trigger orders do not.</0><1>This can also cause limit/triggers to not be executed if the price is not reached for long enough. <2>Read more</2>.</1>"
@@ -71,7 +71,7 @@ msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<
 msgstr "<0>Cela retirera et libérera tous les tokens et mettra en pause l'acquisition par vesting.<1/><2/>Les tokens esGMX qui ont été convertis en GMX resteront des tokens GMX.<3/><4/>Pour réclamer les tokens GMX sans effectuer de retrait, utilisez le bouton \"Réclamer\" dans la section Récompenses totales.<5/><6/></0>\""
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "<0>Total value of tokens in GLP pool ({chainName}).</0><1>Other websites may show a higher value as they add positions' collaterals to the GLP pool.</1>"
+msgid "<0>Total value of tokens in ZLP pool ({chainName}).</0><1>Other websites may show a higher value as they add positions' collaterals to the ZLP pool.</1>"
 msgstr ""
 
 #: src/lib/contracts/callContract.tsx
@@ -116,7 +116,7 @@ msgid "APRs are updated weekly on Wednesday and will depend on the fees collecte
 msgstr "Les taux de rendement annuels sont mis à jour chaque semaine le mercredi et dépendront des frais perçus pour la semaine."
 
 #: src/pages/Stake/StakeV2.js
-msgid "APRs are updated weekly on Wednesday and will depend on the fees collected for the week. <0/><1/>Historical GLP APRs can be checked in this <2>community dashboard</2>."
+msgid "APRs are updated weekly on Wednesday and will depend on the fees collected for the week. <0/><1/>Historical ZLP APRs can be checked in this <2>community dashboard</2>."
 msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.js
@@ -313,15 +313,15 @@ msgid "Arbitrum APR:"
 msgstr "Taux de rendement annuels Arbitrum:"
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
-msgid "As there is not enough liquidity in GLP to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
-msgstr "Comme il n'y a pas assez de liquidité dans GLP pour échanger {0} vers {swapTokenSymbol}, vous pouvez utiliser l'option ci-dessous pour le faire :"
+msgid "As there is not enough liquidity in ZLP to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
+msgstr "Comme il n'y a pas assez de liquidité dans ZLP pour échanger {0} vers {swapTokenSymbol}, vous pouvez utiliser l'option ci-dessous pour le faire :"
 
 #: src/pages/Dashboard/DashboardV1.js
 msgid "Assets Under Management"
 msgstr "Actifs sous gestion"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "Assets Under Management: GMX staked (All chains) + GLP pool ({chainName})."
+msgid "Assets Under Management: GMX staked (All chains) + ZLP pool ({chainName})."
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -338,13 +338,13 @@ msgstr "Liquidité Disponible"
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
-msgid "Available amount to deposit into GLP."
-msgstr "Somme disponible à déposer dans GLP."
+msgid "Available amount to deposit into ZLP."
+msgstr "Somme disponible à déposer dans ZLP."
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
-msgid "Available amount to withdraw from GLP. Funds not utilized by current open positions."
-msgstr "Somme disponible pour retirer de GLP. Montant non utilisé par les postes actuellement ouverts."
+msgid "Available amount to withdraw from ZLP. Funds not utilized by current open positions."
+msgstr "Somme disponible pour retirer de ZLP. Montant non utilisé par les postes actuellement ouverts."
 
 #: src/pages/Home/Home.js
 msgid "Available on your preferred network"
@@ -410,8 +410,8 @@ msgid "Buy"
 msgstr "Acheter"
 
 #: src/pages/BuyGlp/BuyGlp.js
-msgid "Buy / Sell GLP"
-msgstr "Acheter / Vendre GLP"
+msgid "Buy / Sell ZLP"
+msgstr "Acheter / Vendre ZLP"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy AVAX directly to Avalanche or transfer it there."
@@ -425,8 +425,8 @@ msgstr ""
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/pages/Stake/StakeV2.js
-msgid "Buy GLP"
-msgstr "Acheter GLP"
+msgid "Buy ZLP"
+msgstr "Acheter ZLP"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Buy GMX"
@@ -457,8 +457,8 @@ msgid "Buy GMX on {0}"
 msgstr ""
 
 #: src/pages/Buy/Buy.js
-msgid "Buy GMX or GLP"
-msgstr "Acheter GMX ou GLP"
+msgid "Buy GMX or ZLP"
+msgstr "Acheter GMX ou ZLP"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy GMX using Decentralized Exchange Aggregators:"
@@ -1314,12 +1314,12 @@ msgid "Fees generated by GMX"
 msgstr "Commissions générées par GMX"
 
 #: src/components/Glp/GlpSwap.js
-msgid "Fees may vary depending on which asset you sell GLP for. <0/>Enter the amount of GLP you want to redeem in the order form, then check here to compare fees."
-msgstr "Les frais peuvent varier selon quel actif vous vendez pour du GLP. <0/>Indiquer la somme que vous souhaitez rembourser, puis vérifiez ici pour comparer les frais."
+msgid "Fees may vary depending on which asset you sell ZLP for. <0/>Enter the amount of ZLP you want to redeem in the order form, then check here to compare fees."
+msgstr "Les frais peuvent varier selon quel actif vous vendez pour du ZLP. <0/>Indiquer la somme que vous souhaitez rembourser, puis vérifiez ici pour comparer les frais."
 
 #: src/components/Glp/GlpSwap.js
-msgid "Fees may vary depending on which asset you use to buy GLP. <0/>Enter the amount of GLP you want to purchase in the order form, then check here to compare fees."
-msgstr "Les frais peuvent varier selon quel actif vous vendez pour du GLP. <0/>Indiquer la somme que vous souhaitez acheter, puis vérifiez ici pour comparer les frais."
+msgid "Fees may vary depending on which asset you use to buy ZLP. <0/>Enter the amount of ZLP you want to purchase in the order form, then check here to compare fees."
+msgstr "Les frais peuvent varier selon quel actif vous vendez pour du ZLP. <0/>Indiquer la somme que vous souhaitez acheter, puis vérifiez ici pour comparer les frais."
 
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Fees since"
@@ -1366,37 +1366,37 @@ msgid "GBC NFTs APR tracker and rewards"
 msgstr "Tracker de taux de rendement annuels des NFTs GBC et récompenses"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "GLP Index Composition"
-msgstr "Composition de l'indice GLP"
+msgid "ZLP Index Composition"
+msgstr "Composition de l'indice ZLP"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "GLP Pool"
-msgstr "Pool de GLP"
+msgid "ZLP Pool"
+msgstr "Pool de ZLP"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "GLP Vault"
-msgstr "Coffre GLP"
+msgid "ZLP Vault"
+msgstr "Coffre ZLP"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GLP and GMX autocompounding vaults"
+msgid "ZLP and GMX autocompounding vaults"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GLP autocompounding vaults"
+msgid "ZLP autocompounding vaults"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
-msgid "GLP buy disabled, pending {0} upgrade"
-msgstr "Achat GLP désactivé, en attente de {0} actualisations"
+msgid "ZLP buy disabled, pending {0} upgrade"
+msgstr "Achat ZLP désactivé, en attente de {0} actualisations"
 
 #: src/components/TokenCard/TokenCard.js
-msgid "GLP is the liquidity provider token. Accrues 70% of the platform's generated fees."
-msgstr "GLP est le token qui fournit la liquidité. Accumule 70% des frais générés par la plateforme."
+msgid "ZLP is the liquidity provider token. Accrues 70% of the platform's generated fees."
+msgstr "ZLP est le token qui fournit la liquidité. Accumule 70% des frais générés par la plateforme."
 
 #: src/components/Glp/GlpSwap.js
-msgid "GLP sell disabled, pending {0} upgrade"
-msgstr "Vente GLP désactivé, en attente de {0} actualisations"
+msgid "ZLP sell disabled, pending {0} upgrade"
+msgstr "Vente ZLP désactivé, en attente de {0} actualisations"
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "GMX Announcements and Updates"
@@ -1585,8 +1585,8 @@ msgid "Insufficient Available Liquidity to swap to {0}:"
 msgstr "Liquidité disponible insuffisante pour effectuer l'échange à {0}:"
 
 #: src/components/Glp/GlpSwap.js
-msgid "Insufficient GLP balance"
-msgstr "Équilibre insuffisant de GLP"
+msgid "Insufficient ZLP balance"
+msgstr "Équilibre insuffisant de ZLP"
 
 #: src/components/Exchange/PositionSeller.js
 #: src/components/Exchange/PositionSeller.js
@@ -1931,12 +1931,12 @@ msgid "Max leverage: {0}x"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
-msgid "Max pool capacity reached for {0}. Please mint GLP using another token"
-msgstr "Capacité maximale du pool atteinte pour {0}. Veuillez minter GLP avec un autre token"
+msgid "Max pool capacity reached for {0}. Please mint ZLP using another token"
+msgstr "Capacité maximale du pool atteinte pour {0}. Veuillez minter ZLP avec un autre token"
 
 #: src/components/Glp/GlpSwap.js
-msgid "Max pool capacity reached for {0}<0/><1/>Please mint GLP using another token"
-msgstr "Capacité maximale du pool atteinte pour {0}<0/><1/> Veuillez minter GLP avec un autre token"
+msgid "Max pool capacity reached for {0}<0/><1/>Please mint ZLP using another token"
+msgstr "Capacité maximale du pool atteinte pour {0}<0/><1/> Veuillez minter ZLP avec un autre token"
 
 #: src/App/App.js
 msgid "Max slippage precision is 0.01%"
@@ -2328,16 +2328,16 @@ msgid "Pay: {0} USD"
 msgstr "Payer: {0} USD"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "Platform and GLP index tokens."
-msgstr "Tokens de la plate-forme et de l'indice GLP."
+msgid "Platform and ZLP index tokens."
+msgstr "Tokens de la plate-forme et de l'indice ZLP."
 
 #: src/components/Referrals/JoinReferralCode.js
 msgid "Please input a referral code to benefit from fee discounts."
 msgstr "Veuillez saisir un code de parrainage pour bénéficier des réductions de frais."
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Please only use this for full account transfers.<0/>This will transfer all your GMX, esGMX, GLP and Multiplier Points to your new account.<1/>Transfers are only supported if the receiving account has not staked GMX or GLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
-msgstr "Veuillez utiliser ceci uniquement pour les transferts de comptes complets.<0/>Cela permettra de transférer tous vos GMX, esGMX, GLP et points multiplicateurs vers votre nouveau compte.<1/>Les transferts ne sont pris en charge que si le compte destinataire n'a pas encore staké de tokens GMX ou GLP.<2/>Les transferts sont à sens unique, vous ne pourrez pas retransférer les tokens mis en jeu vers le compte émetteur."
+msgid "Please only use this for full account transfers.<0/>This will transfer all your GMX, esGMX, ZLP and Multiplier Points to your new account.<1/>Transfers are only supported if the receiving account has not staked GMX or ZLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
+msgstr "Veuillez utiliser ceci uniquement pour les transferts de comptes complets.<0/>Cela permettra de transférer tous vos GMX, esGMX, ZLP et points multiplicateurs vers votre nouveau compte.<1/>Les transferts ne sont pris en charge que si le compte destinataire n'a pas encore staké de tokens GMX ou ZLP.<2/>Les transferts sont à sens unique, vous ne pourrez pas retransférer les tokens mis en jeu vers le compte émetteur."
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
 msgid "Please switch your network to Arbitrum."
@@ -2486,8 +2486,8 @@ msgid "Protocol analytics"
 msgstr "Analyses du protocole"
 
 #: src/pages/BuyGlp/BuyGlp.js
-msgid "Purchase <0>GLP tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverages trading."
-msgstr "Achetez des <0>tokens de GLP</0>, pour gagner les frais de {nativeTokenSymbol} provenant des opérations d'échange et de levier."
+msgid "Purchase <0>ZLP tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverages trading."
+msgstr "Achetez des <0>tokens de ZLP</0>, pour gagner les frais de {nativeTokenSymbol} provenant des opérations d'échange et de levier."
 
 #: src/pages/Stake/StakeV2.js
 msgid "Purchase Insurance"
@@ -2532,12 +2532,12 @@ msgid "Receiver Address"
 msgstr "Adresse du destinataire"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Receiver has not staked GLP tokens before"
-msgstr "Le destinataire n'a jamais staké de tokens GLP auparavant"
+msgid "Receiver has not staked ZLP tokens before"
+msgstr "Le destinataire n'a jamais staké de tokens ZLP auparavant"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 msgid "Receiver has not staked GMX tokens before"
-msgstr "Le destinataire n'a jamais staké de tokens GLP auparavant"
+msgstr "Le destinataire n'a jamais staké de tokens ZLP auparavant"
 
 #: src/components/Glp/GlpSwap.js
 msgid "Redemption time not yet reached"
@@ -2645,8 +2645,8 @@ msgid "Reserved for Vesting"
 msgstr "Réservé pour le vesting"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Returns calculator for GMX and GLP"
-msgstr "Calculatrice de rendements pour GMX et GLP"
+msgid "Returns calculator for GMX and ZLP"
+msgstr "Calculatrice de rendements pour GMX et ZLP"
 
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
@@ -2719,8 +2719,8 @@ msgstr "Auto-transfert non supporté"
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/pages/Stake/StakeV2.js
-msgid "Sell GLP"
-msgstr "Vendre GLP"
+msgid "Sell ZLP"
+msgstr "Vendre ZLP"
 
 #: src/components/Glp/GlpSwap.js
 msgid "Sell failed."
@@ -2740,12 +2740,12 @@ msgid "Selling..."
 msgstr "Vente en cours..."
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Sender has withdrawn all tokens from GLP Vesting Vault"
-msgstr "L'expéditeur a retiré tous les tokens du coffre de Vesting GLP."
+msgid "Sender has withdrawn all tokens from ZLP Vesting Vault"
+msgstr "L'expéditeur a retiré tous les tokens du coffre de Vesting ZLP."
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 msgid "Sender has withdrawn all tokens from GMX Vesting Vault"
-msgstr "L'expéditeur a retiré tous les tokens du coffre de Vesting GLP."
+msgstr "L'expéditeur a retiré tous les tokens du coffre de Vesting ZLP."
 
 #: src/App/App.js
 #: src/components/Header/AppHeaderLinks.tsx
@@ -2854,8 +2854,8 @@ msgid "Stake"
 msgstr "Staker"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake <0>GMX</0> and <1>GLP</1> to earn rewards."
-msgstr "Staker <0>GMX</0> et <1>GLP</1> pour gagner des récompenses."
+msgid "Stake <0>GMX</0> and <1>ZLP</1> to earn rewards."
+msgstr "Staker <0>GMX</0> et <1>ZLP</1> pour gagner des récompenses."
 
 #: src/pages/Stake/StakeV2.js
 msgid "Stake GMX"
@@ -3562,12 +3562,12 @@ msgid "Vest"
 msgstr "Vester"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with GLP on Arbitrum"
-msgstr "Vester avec GLP sur Arbitrum"
+msgid "Vest with ZLP on Arbitrum"
+msgstr "Vester avec ZLP sur Arbitrum"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with GLP on Avalanche"
-msgstr "Vester avec GLP sur Avalanche"
+msgid "Vest with ZLP on Avalanche"
+msgstr "Vester avec ZLP sur Avalanche"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
 msgid "Vest with GMX on Arbitrum"
@@ -3578,8 +3578,8 @@ msgid "Vest with GMX on Avalanche"
 msgstr "Vester avec GMX sur Avalanche"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Vested GLP not withdrawn"
-msgstr "GLP vesté non retiré"
+msgid "Vested ZLP not withdrawn"
+msgstr "ZLP vesté non retiré"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 msgid "Vested GMX not withdrawn"
@@ -3707,8 +3707,8 @@ msgid "Withdraw failed."
 msgstr "Retrait échoué."
 
 #: src/pages/Stake/StakeV2.js
-msgid "Withdraw from GLP Vault"
-msgstr "Retirer du coffre GLP"
+msgid "Withdraw from ZLP Vault"
+msgstr "Retirer du coffre ZLP"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Withdraw from GMX Vault"
@@ -3925,20 +3925,20 @@ msgid "{0} Capacity Reached"
 msgstr "{0} Capacité atteinte"
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} GLP (${1})"
-msgstr "{0} GLP (${1})"
+msgid "{0} ZLP (${1})"
+msgstr "{0} ZLP (${1})"
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} GLP bought with {1} {2}!"
-msgstr "{0} GLP acheté avec {1} {2} !"
+msgid "{0} ZLP bought with {1} {2}!"
+msgstr "{0} ZLP acheté avec {1} {2} !"
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} GLP have been reserved for vesting."
-msgstr "{0} GLP ont été réservés pour le vesting."
+msgid "{0} ZLP have been reserved for vesting."
+msgstr "{0} ZLP ont été réservés pour le vesting."
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} GLP sold for {1} {2}!"
-msgstr "{0} GLP a été vendu pour {1} {2}!"
+msgid "{0} ZLP sold for {1} {2}!"
+msgstr "{0} ZLP a été vendu pour {1} {2}!"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -3965,8 +3965,8 @@ msgid "{0} is above its target weight.<0/><1/>Get lower fees to <2>swap</2> toke
 msgstr "{0} est au-dessus de son poids cible.<0/><1/>Obtenez une réduction des frais pour <2>échanger</2> les tokens pour {1}."
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "{0} is below its target weight.<0/><1/>Get lower fees to <2>buy GLP</2> with {1}, and to <3>swap</3> {2} for other tokens."
-msgstr "{0} est en dessous de son poids cible.<0/><1/>Obtenez une réduction des frais pour <2>acheter GLP</2> avec {1} et d'<3>échanger</3> {2} pour d'autres tokens."
+msgid "{0} is below its target weight.<0/><1/>Get lower fees to <2>buy ZLP</2> with {1}, and to <3>swap</3> {2} for other tokens."
+msgstr "{0} est en dessous de son poids cible.<0/><1/>Obtenez une réduction des frais pour <2>acheter ZLP</2> avec {1} et d'<3>échanger</3> {2} pour d'autres tokens."
 
 #: src/components/Exchange/SwapBox.js
 msgid "{0} is required for collateral."

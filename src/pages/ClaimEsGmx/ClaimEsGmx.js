@@ -225,7 +225,7 @@ export default function ClaimEsGmx({ setPendingTxns }) {
         result);
     }
 
-    stakingToken = "GLP";
+    stakingToken = "ZLP";
   }
 
   if (selectedOption === VEST_WITH_GMX_AVAX && avaxVestingData) {
@@ -253,7 +253,7 @@ export default function ClaimEsGmx({ setPendingTxns }) {
         result);
     }
 
-    stakingToken = "GLP";
+    stakingToken = "ZLP";
   }
 
   const getError = () => {
@@ -388,7 +388,7 @@ export default function ClaimEsGmx({ setPendingTxns }) {
                 isChecked={selectedOption === VEST_WITH_GLP_ARB}
                 setIsChecked={() => setSelectedOption(VEST_WITH_GLP_ARB)}
               >
-                <Trans>Vest with GLP on Arbitrum</Trans>
+                <Trans>Vest with ZLP on Arbitrum</Trans>
                 <img src={arbitrumIcon} alt="Arbitrum" />
               </Checkbox>
               <Checkbox
@@ -404,7 +404,7 @@ export default function ClaimEsGmx({ setPendingTxns }) {
                 isChecked={selectedOption === VEST_WITH_GLP_AVAX}
                 setIsChecked={() => setSelectedOption(VEST_WITH_GLP_AVAX)}
               >
-                <Trans>Vest with GLP on Avalanche</Trans>
+                <Trans>Vest with ZLP on Avalanche</Trans>
                 <img src={avaIcon} alt="Avalanche" />
               </Checkbox>
             </div>

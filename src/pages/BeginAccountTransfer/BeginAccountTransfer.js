@@ -135,7 +135,7 @@ export default function BeginAccountTransfer(props) {
       return t`Vested GMX not withdrawn`;
     }
     if (hasVestedGlp) {
-      return t`Vested GLP not withdrawn`;
+      return t`Vested ZLP not withdrawn`;
     }
     if (!receiver || receiver.length === 0) {
       return t`Enter Receiver Address`;
@@ -243,9 +243,9 @@ export default function BeginAccountTransfer(props) {
           <Trans>
             Please only use this for full account transfers.
             <br />
-            This will transfer all your GMX, esGMX, GLP and Multiplier Points to your new account.
+            This will transfer all your GMX, esGMX, ZLP and Multiplier Points to your new account.
             <br />
-            Transfers are only supported if the receiving account has not staked GMX or GLP tokens before.
+            Transfers are only supported if the receiving account has not staked GMX or ZLP tokens before.
             <br />
             Transfers are one-way, you will not be able to transfer staked tokens back to the sending account.
           </Trans>
@@ -278,13 +278,13 @@ export default function BeginAccountTransfer(props) {
               <Trans>Sender has withdrawn all tokens from GMX Vesting Vault</Trans>
             </ValidationRow>
             <ValidationRow isValid={!hasVestedGlp}>
-              <Trans>Sender has withdrawn all tokens from GLP Vesting Vault</Trans>
+              <Trans>Sender has withdrawn all tokens from ZLP Vesting Vault</Trans>
             </ValidationRow>
             <ValidationRow isValid={!hasStakedGmx}>
               <Trans>Receiver has not staked GMX tokens before</Trans>
             </ValidationRow>
             <ValidationRow isValid={!hasStakedGlp}>
-              <Trans>Receiver has not staked GLP tokens before</Trans>
+              <Trans>Receiver has not staked ZLP tokens before</Trans>
             </ValidationRow>
           </div>
           <div className="input-row">
