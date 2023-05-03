@@ -508,7 +508,7 @@ function FullApp() {
               <Route exact path="/jobs">
                 <Jobs />
               </Route>
-              <Route exact path="/buy_gmx">
+              <Route exact path="/buy_zmx">
                 <BuyGMX />
               </Route>
               <Route exact path="/ecosystem">
@@ -523,7 +523,7 @@ function FullApp() {
               <Route exact path="/nft_wallet">
                 <NftWallet />
               </Route>
-              <Route exact path="/claim_es_gmx">
+              <Route exact path="/claim_es_zmx">
                 <ClaimEsGmx setPendingTxns={setPendingTxns} />
               </Route>
               <Route exact path="/actions">

@@ -2263,7 +2263,7 @@ export default function SwapBox(props) {
                           <br />
                           <div className="PositionSeller-fee-item">
                             <Trans>
-                              <ExternalLink href="https://gmxio.gitbook.io/gmx/trading#fees">More Info</ExternalLink>{" "}
+                              <ExternalLink href="https://zmxio.gitbook.io/zmx/trading#fees">More Info</ExternalLink>{" "}
                               about fees.
                             </Trans>
                           </div>
@@ -2285,7 +2285,7 @@ export default function SwapBox(props) {
               orders. <br />
               <br />
               For screenshots and more information, please see the{" "}
-              <ExternalLink href="https://gmxio.gitbook.io/gmx/trading#stop-loss-take-profit-orders">docs</ExternalLink>
+              <ExternalLink href="https://zmxio.gitbook.io/zmx/trading#stop-loss-take-profit-orders">docs</ExternalLink>
               .
             </Trans>
           </div>
@@ -2379,7 +2379,7 @@ export default function SwapBox(props) {
                         top right of the page after connecting your wallet.
                         <br />
                         <br />
-                        <ExternalLink href="https://gmxio.gitbook.io/gmx/trading#opening-a-position">
+                        <ExternalLink href="https://zmxio.gitbook.io/zmx/trading#opening-a-position">
                           More Info
                         </ExternalLink>
                       </Trans>
@@ -2408,7 +2408,7 @@ export default function SwapBox(props) {
                         This exit price will change with the price of the asset.
                         <br />
                         <br />
-                        <ExternalLink href="https://gmxio.gitbook.io/gmx/trading#opening-a-position">
+                        <ExternalLink href="https://zmxio.gitbook.io/zmx/trading#opening-a-position">
                           More Info
                         </ExternalLink>
                       </Trans>
@@ -2446,7 +2446,7 @@ export default function SwapBox(props) {
                         </div>
                       )}
                       <br />
-                      <ExternalLink href="https://gmxio.gitbook.io/gmx/trading#opening-a-position">
+                      <ExternalLink href="https://zmxio.gitbook.io/zmx/trading#opening-a-position">
                         <Trans>More Info</Trans>
                       </ExternalLink>
                     </div>

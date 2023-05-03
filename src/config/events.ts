@@ -26,7 +26,7 @@ export const appEventsData: EventData[] = [
   //   buttons: [
   //     {
   //       text: "Read More",
-  //       link: "https://medium.com/@gmx.io/gmx-deployment-updates-nov-2022-16572314874d",
+  //       link: "https://medium.com/@zmx.io/zmx-deployment-updates-nov-2022-16572314874d",
   //       newTab: true,
   //     },
   //   ],

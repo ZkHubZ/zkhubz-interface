@@ -7,7 +7,7 @@ import { RiFileDownloadLine } from "react-icons/ri";
 import { FiTwitter } from "react-icons/fi";
 import { useCopyToClipboard, useMedia } from "react-use";
 import Modal from "../Modal/Modal";
-import gmxLogo from "img/gmx-logo-with-name.svg";
+import zmxLogo from "img/zmx-logo-with-name.svg";
 import "./PositionShare.css";
 import { QRCodeSVG } from "qrcode.react";
 import { getHomeUrl, getRootShareApiUrl, getTwitterIntentURL, USD_DECIMALS } from "lib/legacy";
@@ -139,7 +139,7 @@ function PositionShareCard({
   return (
     <div className="relative">
       <div ref={positionRef} className="position-share" style={{ backgroundImage: `url(${sharePositionBgImg})` }}>
-        <img className="logo" src={gmxLogo} alt="ZMX Logo" />
+        <img className="logo" src={zmxLogo} alt="ZMX Logo" />
         <ul className="info">
           <li className="side">{isLong ? "LONG" : "SHORT"}</li>
           <li>{formatAmount(leverage, 4, 2, true)}x&nbsp;</li>
@@ -167,7 +167,7 @@ function PositionShareCard({
                 <p className="code">{code}</p>
               </>
             ) : (
-              <p className="code">https://gmx.io</p>
+              <p className="code">https://zmx.io</p>
             )}
           </div>
         </div>

@@ -34,7 +34,7 @@ export function getVestingDataV2(vestingInfo) {
     return;
   }
 
-  const keys = ["gmxVester", "glpVester"];
+  const keys = ["zmxVester", "glpVester"];
   const data = {};
   const propsLength = 12;
 
@@ -204,7 +204,7 @@ export default function ClaimEsGmx({ setPendingTxns }) {
     const result = getVestingValues({
       minRatio: bigNumberify(4),
       amount,
-      vestingDataItem: arbVestingData.gmxVester,
+      vestingDataItem: arbVestingData.zmxVester,
     });
 
     if (result) {
@@ -232,7 +232,7 @@ export default function ClaimEsGmx({ setPendingTxns }) {
     const result = getVestingValues({
       minRatio: bigNumberify(4),
       amount,
-      vestingDataItem: avaxVestingData.gmxVester,
+      vestingDataItem: avaxVestingData.zmxVester,
     });
 
     if (result) {

@@ -50,13 +50,13 @@ export default function BeginAccountTransfer(props) {
     parsedReceiver = receiver;
   }
 
-  const gmxAddress = getContract(chainId, "ZMX");
-  const gmxVesterAddress = getContract(chainId, "GmxVester");
+  const zmxAddress = getContract(chainId, "ZMX");
+  const zmxVesterAddress = getContract(chainId, "GmxVester");
   const glpVesterAddress = getContract(chainId, "GlpVester");
 
   const rewardRouterAddress = getContract(chainId, "RewardRouter");
 
-  const { data: gmxVesterBalance } = useSWR(active && [active, chainId, gmxVesterAddress, "balanceOf", account], {
+  const { data: zmxVesterBalance } = useSWR(active && [active, chainId, zmxVesterAddress, "balanceOf", account], {
     fetcher: contractFetcher(library, Token),
   });
 
@@ -81,7 +81,7 @@ export default function BeginAccountTransfer(props) {
   );
 
   const { data: transferredCumulativeGmxRewards } = useSWR(
-    [active, chainId, gmxVesterAddress, "transferredCumulativeRewards", parsedReceiver],
+    [active, chainId, zmxVesterAddress, "transferredCumulativeRewards", parsedReceiver],
     {
       fetcher: contractFetcher(library, Vester),
     }
@@ -101,23 +101,23 @@ export default function BeginAccountTransfer(props) {
     }
   );
 
-  const { data: gmxAllowance } = useSWR(
-    active && [active, chainId, gmxAddress, "allowance", account, stakedGmxTrackerAddress],
+  const { data: zmxAllowance } = useSWR(
+    active && [active, chainId, zmxAddress, "allowance", account, stakedGmxTrackerAddress],
     {
       fetcher: contractFetcher(library, Token),
     }
   );
 
-  const { data: gmxStaked } = useSWR(
-    active && [active, chainId, stakedGmxTrackerAddress, "depositBalances", account, gmxAddress],
+  const { data: zmxStaked } = useSWR(
+    active && [active, chainId, stakedGmxTrackerAddress, "depositBalances", account, zmxAddress],
     {
       fetcher: contractFetcher(library, RewardTracker),
     }
   );
 
-  const needApproval = gmxAllowance && gmxStaked && gmxStaked.gt(gmxAllowance);
+  const needApproval = zmxAllowance && zmxStaked && zmxStaked.gt(zmxAllowance);
 
-  const hasVestedGmx = gmxVesterBalance && gmxVesterBalance.gt(0);
+  const hasVestedGmx = zmxVesterBalance && zmxVesterBalance.gt(0);
   const hasVestedGlp = glpVesterBalance && glpVesterBalance.gt(0);
   const hasStakedGmx =
     (cumulativeGmxRewards && cumulativeGmxRewards.gt(0)) ||
@@ -195,7 +195,7 @@ export default function BeginAccountTransfer(props) {
       approveTokens({
         setIsApproving,
         library,
-        tokenAddress: gmxAddress,
+        tokenAddress: zmxAddress,
         spender: stakedGmxTrackerAddress,
         chainId,
       });

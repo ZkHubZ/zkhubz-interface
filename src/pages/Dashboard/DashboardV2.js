@@ -121,11 +121,11 @@ export default function DashboardV2() {
   const vaultAddress = getContract(chainId, "Vault");
   const glpManagerAddress = getContract(chainId, "GlpManager");
 
-  const gmxAddress = getContract(chainId, "ZMX");
+  const zmxAddress = getContract(chainId, "ZMX");
   const glpAddress = getContract(chainId, "ZLP");
   const usdgAddress = getContract(chainId, "USDG");
 
-  const tokensForSupplyQuery = [gmxAddress, glpAddress, usdgAddress];
+  const tokensForSupplyQuery = [zmxAddress, glpAddress, usdgAddress];
 
   const { data: aums } = useSWR([`Dashboard:getAums:${active}`, chainId, glpManagerAddress, "getAums"], {
     fetcher: contractFetcher(library, GlpManager),
@@ -209,7 +209,7 @@ export default function DashboardV2() {
       { total: 0 }
     );
 
-  const { gmxPrice, gmxPriceFromArbitrum, gmxPriceFromAvalanche } = useGmxPrice(
+  const { zmxPrice, zmxPriceFromArbitrum, zmxPriceFromAvalanche } = useGmxPrice(
     chainId,
     { arbitrum: chainId === ARBITRUM ? library : undefined },
     active
@@ -219,14 +219,14 @@ export default function DashboardV2() {
 
   let { avax: avaxStakedGmx, arbitrum: arbitrumStakedGmx, total: totalStakedGmx } = useTotalGmxStaked();
 
-  let gmxMarketCap;
-  if (gmxPrice && totalGmxSupply) {
-    gmxMarketCap = gmxPrice.mul(totalGmxSupply).div(expandDecimals(1, GMX_DECIMALS));
+  let zmxMarketCap;
+  if (zmxPrice && totalGmxSupply) {
+    zmxMarketCap = zmxPrice.mul(totalGmxSupply).div(expandDecimals(1, GMX_DECIMALS));
   }
 
   let stakedGmxSupplyUsd;
-  if (gmxPrice && totalStakedGmx) {
-    stakedGmxSupplyUsd = totalStakedGmx.mul(gmxPrice).div(expandDecimals(1, GMX_DECIMALS));
+  if (zmxPrice && totalStakedGmx) {
+    stakedGmxSupplyUsd = totalStakedGmx.mul(zmxPrice).div(expandDecimals(1, GMX_DECIMALS));
   }
 
   let aum;
@@ -247,8 +247,8 @@ export default function DashboardV2() {
   }
 
   let tvl;
-  if (glpMarketCap && gmxPrice && totalStakedGmx) {
-    tvl = glpMarketCap.add(gmxPrice.mul(totalStakedGmx).div(expandDecimals(1, GMX_DECIMALS)));
+  if (glpMarketCap && zmxPrice && totalStakedGmx) {
+    tvl = glpMarketCap.add(zmxPrice.mul(totalStakedGmx).div(expandDecimals(1, GMX_DECIMALS)));
   }
 
   const ethFloorPriceFund = expandDecimals(350 + 148 + 384, 18);
@@ -348,7 +348,7 @@ export default function DashboardV2() {
               )}
               <br />
               <div>
-                <ExternalLink href="https://gmxio.gitbook.io/gmx/glp">
+                <ExternalLink href="https://zmxio.gitbook.io/zmx/glp">
                   <Trans>More Info</Trans>
                 </ExternalLink>
               </div>
@@ -373,7 +373,7 @@ export default function DashboardV2() {
 
   let notStakedPercent = 100 - stakedPercent - liquidityPercent;
 
-  let gmxDistributionData = [
+  let zmxDistributionData = [
     {
       name: t`staked`,
       value: stakedPercent,
@@ -424,12 +424,12 @@ export default function DashboardV2() {
     else return -1;
   });
 
-  gmxDistributionData = gmxDistributionData.sort(function (a, b) {
+  zmxDistributionData = zmxDistributionData.sort(function (a, b) {
     if (a.value < b.value) return 1;
     else return -1;
   });
 
-  const [gmxActiveIndex, setGMXActiveIndex] = useState(null);
+  const [zmxActiveIndex, setGMXActiveIndex] = useState(null);
 
   const onGMXDistributionChartEnter = (_, index) => {
     setGMXActiveIndex(index);
@@ -475,9 +475,9 @@ export default function DashboardV2() {
               <Trans>
                 {chainName} Total Stats start from {totalStatsStartDate}.<br /> For detailed stats:
               </Trans>{" "}
-              {chainId === ARBITRUM && <ExternalLink href="https://stats.gmx.io">https://stats.gmx.io</ExternalLink>}
+              {chainId === ARBITRUM && <ExternalLink href="https://stats.zmx.io">https://stats.zmx.io</ExternalLink>}
               {chainId === AVALANCHE && (
-                <ExternalLink href="https://stats.gmx.io/avalanche">https://stats.gmx.io/avalanche</ExternalLink>
+                <ExternalLink href="https://stats.zmx.io/avalanche">https://stats.zmx.io/avalanche</ExternalLink>
               )}
               .
             </div>
@@ -683,13 +683,13 @@ export default function DashboardV2() {
             </div>
           </div>
           <div className="DashboardV2-token-cards">
-            <div className="stats-wrapper stats-wrapper--gmx">
+            <div className="stats-wrapper stats-wrapper--zmx">
               <div className="App-card">
                 <div className="stats-block">
                   <div className="App-card-title">
                     <div className="App-card-title-mark">
                       <div className="App-card-title-mark-icon">
-                        <img src={currentIcons.gmx} width="40" alt="ZMX Token Icon" />
+                        <img src={currentIcons.zmx} width="40" alt="ZMX Token Icon" />
                       </div>
                       <div className="App-card-title-mark-info">
                         <div className="App-card-title-mark-title">ZMX</div>
@@ -707,22 +707,22 @@ export default function DashboardV2() {
                         <Trans>Price</Trans>
                       </div>
                       <div>
-                        {!gmxPrice && "..."}
-                        {gmxPrice && (
+                        {!zmxPrice && "..."}
+                        {zmxPrice && (
                           <TooltipComponent
                             position="right-bottom"
                             className="nowrap"
-                            handle={"$" + formatAmount(gmxPrice, USD_DECIMALS, 2, true)}
+                            handle={"$" + formatAmount(zmxPrice, USD_DECIMALS, 2, true)}
                             renderContent={() => (
                               <>
                                 <StatsTooltipRow
                                   label={t`Price on Arbitrum`}
-                                  value={formatAmount(gmxPriceFromArbitrum, USD_DECIMALS, 2, true)}
+                                  value={formatAmount(zmxPriceFromArbitrum, USD_DECIMALS, 2, true)}
                                   showDollar={true}
                                 />
                                 <StatsTooltipRow
                                   label={t`Price on Avalanche`}
-                                  value={formatAmount(gmxPriceFromAvalanche, USD_DECIMALS, 2, true)}
+                                  value={formatAmount(zmxPriceFromAvalanche, USD_DECIMALS, 2, true)}
                                   showDollar={true}
                                 />
                               </>
@@ -763,15 +763,15 @@ export default function DashboardV2() {
                       <div className="label">
                         <Trans>Market Cap</Trans>
                       </div>
-                      <div>${formatAmount(gmxMarketCap, USD_DECIMALS, 0, true)}</div>
+                      <div>${formatAmount(zmxMarketCap, USD_DECIMALS, 0, true)}</div>
                     </div>
                   </div>
                 </div>
                 <div className="stats-piechart" onMouseLeave={onGMXDistributionChartLeave}>
-                  {gmxDistributionData.length > 0 && (
+                  {zmxDistributionData.length > 0 && (
                     <PieChart width={210} height={210}>
                       <Pie
-                        data={gmxDistributionData}
+                        data={zmxDistributionData}
                         cx={100}
                         cy={100}
                         innerRadius={73}
@@ -785,19 +785,19 @@ export default function DashboardV2() {
                         onMouseOut={onGMXDistributionChartLeave}
                         onMouseLeave={onGMXDistributionChartLeave}
                       >
-                        {gmxDistributionData.map((entry, index) => (
+                        {zmxDistributionData.map((entry, index) => (
                           <Cell
                             key={`cell-${index}`}
                             fill={entry.color}
                             style={{
                               filter:
-                                gmxActiveIndex === index
+                                zmxActiveIndex === index
                                   ? `drop-shadow(0px 0px 6px ${hexToRgba(entry.color, 0.7)})`
                                   : "none",
                               cursor: "pointer",
                             }}
                             stroke={entry.color}
-                            strokeWidth={gmxActiveIndex === index ? 1 : 1}
+                            strokeWidth={zmxActiveIndex === index ? 1 : 1}
                           />
                         ))}
                       </Pie>

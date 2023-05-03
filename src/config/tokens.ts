@@ -385,7 +385,7 @@ export const ADDITIONAL_TOKENS: { [chainId: number]: Token[] } = {
       symbol: "ZLP",
       address: getContract(ARBITRUM, "ZLP"),
       decimals: 18,
-      imageUrl: "https://github.com/gmx-io/gmx-assets/blob/main/ZMX-Assets/PNG/GLP_LOGO%20ONLY.png?raw=true",
+      imageUrl: "https://github.com/zmx-io/zmx-assets/blob/main/ZMX-Assets/PNG/GLP_LOGO%20ONLY.png?raw=true",
     },
   ],
   [AVALANCHE]: [
@@ -407,7 +407,7 @@ export const ADDITIONAL_TOKENS: { [chainId: number]: Token[] } = {
       symbol: "ZLP",
       address: getContract(ARBITRUM, "ZLP"),
       decimals: 18,
-      imageUrl: "https://github.com/gmx-io/gmx-assets/blob/main/ZMX-Assets/PNG/GLP_LOGO%20ONLY.png?raw=true",
+      imageUrl: "https://github.com/zmx-io/zmx-assets/blob/main/ZMX-Assets/PNG/GLP_LOGO%20ONLY.png?raw=true",
     },
   ],
 };
@@ -427,7 +427,7 @@ export const PLATFORM_TOKENS: { [chainId: number]: { [symbol: string]: Token } }
       symbol: "ZLP",
       decimals: 18,
       address: getContract(ARBITRUM, "StakedGlpTracker"), // address of fsGLP token because user only holds fsGLP
-      imageUrl: "https://github.com/gmx-io/gmx-assets/blob/main/ZMX-Assets/PNG/GLP_LOGO%20ONLY.png?raw=true",
+      imageUrl: "https://github.com/zmx-io/zmx-assets/blob/main/ZMX-Assets/PNG/GLP_LOGO%20ONLY.png?raw=true",
     },
   },
   [AVALANCHE]: {
@@ -444,7 +444,7 @@ export const PLATFORM_TOKENS: { [chainId: number]: { [symbol: string]: Token } }
       symbol: "ZLP",
       decimals: 18,
       address: getContract(AVALANCHE, "StakedGlpTracker"), // address of fsGLP token because user only holds fsGLP
-      imageUrl: "https://github.com/gmx-io/gmx-assets/blob/main/ZMX-Assets/PNG/GLP_LOGO%20ONLY.png?raw=true",
+      imageUrl: "https://github.com/zmx-io/zmx-assets/blob/main/ZMX-Assets/PNG/GLP_LOGO%20ONLY.png?raw=true",
     },
   },
 };
@@ -452,7 +452,7 @@ export const PLATFORM_TOKENS: { [chainId: number]: { [symbol: string]: Token } }
 export const ICONLINKS = {
   [ARBITRUM_TESTNET]: {
     ZMX: {
-      coingecko: "https://www.coingecko.com/en/coins/gmx",
+      coingecko: "https://www.coingecko.com/en/coins/zmx",
       arbitrum: "https://arbiscan.io/address/0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
     },
     ZLP: {
@@ -461,12 +461,12 @@ export const ICONLINKS = {
   },
   [ARBITRUM]: {
     ZMX: {
-      coingecko: "https://www.coingecko.com/en/coins/gmx",
+      coingecko: "https://www.coingecko.com/en/coins/zmx",
       arbitrum: "https://arbiscan.io/address/0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
     },
     ZLP: {
       arbitrum: "https://arbiscan.io/token/0x1aDDD80E6039594eE970E5872D247bf0414C8903",
-      reserves: "https://portfolio.nansen.ai/dashboard/gmx?chain=ARBITRUM",
+      reserves: "https://portfolio.nansen.ai/dashboard/zmx?chain=ARBITRUM",
     },
     ETH: {
       coingecko: "https://www.coingecko.com/en/coins/ethereum",
@@ -506,12 +506,12 @@ export const ICONLINKS = {
   },
   [AVALANCHE]: {
     ZMX: {
-      coingecko: "https://www.coingecko.com/en/coins/gmx",
+      coingecko: "https://www.coingecko.com/en/coins/zmx",
       avalanche: "https://snowtrace.io/address/0x62edc0692bd897d2295872a9ffcac5425011c661",
     },
     ZLP: {
       avalanche: "https://snowtrace.io/address/0x9e295B5B976a184B14aD8cd72413aD846C299660",
-      reserves: "https://portfolio.nansen.ai/dashboard/gmx?chain=AVAX",
+      reserves: "https://portfolio.nansen.ai/dashboard/zmx?chain=AVAX",
     },
     AVAX: {
       coingecko: "https://www.coingecko.com/en/coins/avalanche",

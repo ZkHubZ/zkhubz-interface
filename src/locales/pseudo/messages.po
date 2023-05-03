@@ -1464,7 +1464,7 @@ msgid "ZMX is currently live on Arbitrum and Avalanche."
 msgstr ""
 
 #: src/pages/Jobs/Jobs.js
-msgid "ZMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
+msgid "ZMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@zmx.io</0>."
 msgstr ""
 
 #: src/components/TokenCard/TokenCard.js

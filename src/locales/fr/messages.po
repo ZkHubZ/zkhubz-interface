@@ -1464,8 +1464,8 @@ msgid "ZMX is currently live on Arbitrum and Avalanche."
 msgstr "ZMX est en émission direct sur Arbitrum et Avalanche."
 
 #: src/pages/Jobs/Jobs.js
-msgid "ZMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
-msgstr "ZMX ne recherche pas activement de nouveaux recrutements pour le moment. Toutefois, si vous pensez pouvoir contribuer au projet, veuillez envoyer un courriel à l'adresse suivante <0>jobs@gmx.io</0>."
+msgid "ZMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@zmx.io</0>."
+msgstr "ZMX ne recherche pas activement de nouveaux recrutements pour le moment. Toutefois, si vous pensez pouvoir contribuer au projet, veuillez envoyer un courriel à l'adresse suivante <0>jobs@zmx.io</0>."
 
 #: src/components/TokenCard/TokenCard.js
 msgid "ZMX is the utility and governance token. Accrues 30% of the platform's generated fees."

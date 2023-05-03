@@ -89,8 +89,8 @@ export default function ReferralTerms() {
               <p className="body-text">
                 The Rebates and Discounts percentages for the default tier Tier 1, and instructions to upgrade to Tier 2
                 and Tier 3, are contained in{" "}
-                <ExternalLink href="https://gmxio.gitbook.io/gmx/referrals">
-                  https://gmxio.gitbook.io/gmx/referrals.
+                <ExternalLink href="https://zmxio.gitbook.io/zmx/referrals">
+                  https://zmxio.gitbook.io/zmx/referrals.
                 </ExternalLink>
               </p>
             </div>
@@ -145,7 +145,7 @@ export default function ReferralTerms() {
               <p className="body-text">
                 ZMX.io may revise these Terms from time to time. We will notify you by updating the date at the top of
                 the Terms and maintaining a current version. The most current version of the Terms will always be at
-                https://gmx.io/referral-terms. All modifications will be effective when they are posted. By using the
+                https://zmx.io/referral-terms. All modifications will be effective when they are posted. By using the
                 Referral Program after those revisions become effective, you agree to be bound by the revised Terms.
               </p>
             </div>

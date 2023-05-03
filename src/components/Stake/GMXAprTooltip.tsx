@@ -5,21 +5,21 @@ import { formatKeyAmount } from "lib/numbers";
 
 type Props = {
   processedData: {
-    gmxAprForEsGmx: BigNumber;
-    gmxAprForNativeToken: BigNumber;
-    gmxAprForNativeTokenWithBoost: BigNumber;
-    gmxBoostAprForNativeToken?: BigNumber;
+    zmxAprForEsGmx: BigNumber;
+    zmxAprForNativeToken: BigNumber;
+    zmxAprForNativeTokenWithBoost: BigNumber;
+    zmxBoostAprForNativeToken?: BigNumber;
   };
   nativeTokenSymbol: string;
 };
 
 function renderEscrowedGMXApr(processedData) {
-  if (!processedData?.gmxAprForEsGmx?.gt(0)) return;
+  if (!processedData?.zmxAprForEsGmx?.gt(0)) return;
   return (
     <StatsTooltipRow
       label={t`Escrowed ZMX APR`}
       showDollar={false}
-      value={`${formatKeyAmount(processedData, "gmxAprForEsGmx", 2, 2, true)}%`}
+      value={`${formatKeyAmount(processedData, "zmxAprForEsGmx", 2, 2, true)}%`}
     />
   );
 }
@@ -27,30 +27,30 @@ function renderEscrowedGMXApr(processedData) {
 export default function GMXAprTooltip({ processedData, nativeTokenSymbol }: Props) {
   return (
     <>
-      {(!processedData.gmxBoostAprForNativeToken || processedData.gmxBoostAprForNativeToken.eq(0)) && (
+      {(!processedData.zmxBoostAprForNativeToken || processedData.zmxBoostAprForNativeToken.eq(0)) && (
         <StatsTooltipRow
           label={t`${nativeTokenSymbol} APR`}
           showDollar={false}
-          value={`${formatKeyAmount(processedData, "gmxAprForNativeToken", 2, 2, true)}%`}
+          value={`${formatKeyAmount(processedData, "zmxAprForNativeToken", 2, 2, true)}%`}
         />
       )}
-      {processedData?.gmxBoostAprForNativeToken?.gt(0) ? (
+      {processedData?.zmxBoostAprForNativeToken?.gt(0) ? (
         <div>
           <StatsTooltipRow
             label={t`${nativeTokenSymbol} Base APR`}
             showDollar={false}
-            value={`${formatKeyAmount(processedData, "gmxAprForNativeToken", 2, 2, true)}%`}
+            value={`${formatKeyAmount(processedData, "zmxAprForNativeToken", 2, 2, true)}%`}
           />
           <StatsTooltipRow
             label={t`${nativeTokenSymbol} Boosted APR`}
             showDollar={false}
-            value={`${formatKeyAmount(processedData, "gmxBoostAprForNativeToken", 2, 2, true)}%`}
+            value={`${formatKeyAmount(processedData, "zmxBoostAprForNativeToken", 2, 2, true)}%`}
           />
           <div className="Tooltip-divider" />
           <StatsTooltipRow
             label={t`${nativeTokenSymbol} Total APR`}
             showDollar={false}
-            value={`${formatKeyAmount(processedData, "gmxAprForNativeTokenWithBoost", 2, 2, true)}%`}
+            value={`${formatKeyAmount(processedData, "zmxAprForNativeTokenWithBoost", 2, 2, true)}%`}
           />
           <br />
           {renderEscrowedGMXApr(processedData)}

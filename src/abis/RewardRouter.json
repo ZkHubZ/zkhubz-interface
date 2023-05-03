@@ -282,7 +282,7 @@
     },
     {
       "inputs": [],
-      "name": "gmx",
+      "name": "zmx",
       "outputs": [
         {
           "internalType": "address",
@@ -295,7 +295,7 @@
     },
     {
       "inputs": [],
-      "name": "gmxVester",
+      "name": "zmxVester",
       "outputs": [
         {
           "internalType": "address",
@@ -371,7 +371,7 @@
         },
         {
           "internalType": "address",
-          "name": "_gmx",
+          "name": "_zmx",
           "type": "address"
         },
         {
@@ -421,7 +421,7 @@
         },
         {
           "internalType": "address",
-          "name": "_gmxVester",
+          "name": "_zmxVester",
           "type": "address"
         },
         {

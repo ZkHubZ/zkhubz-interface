@@ -35,7 +35,7 @@ const { MaxUint256, AddressZero } = ethers.constants;
 
 const precision = 1000000;
 const decimals = 6;
-const gmxPrice = bigNumberify(2 * precision);
+const zmxPrice = bigNumberify(2 * precision);
 const tokens = [
   {
     name: "GMT",
@@ -76,7 +76,7 @@ const tokens = [
 ];
 
 const readerAddress = getContract(CHAIN_ID, "Reader");
-const gmxMigratorAddress = getContract(CHAIN_ID, "GmxMigrator");
+const zmxMigratorAddress = getContract(CHAIN_ID, "GmxMigrator");
 
 function MigrationModal(props) {
   const {
@@ -97,7 +97,7 @@ function MigrationModal(props) {
   const [isApproving, setIsApproving] = useState(false);
 
   const { data: tokenAllowance, mutate: updateTokenAllowance } = useSWR(
-    [active, CHAIN_ID, token.address, "allowance", account, gmxMigratorAddress],
+    [active, CHAIN_ID, token.address, "allowance", account, zmxMigratorAddress],
     {
       fetcher: contractFetcher(library, Token),
     }
@@ -131,13 +131,13 @@ function MigrationModal(props) {
   let totalAmountUsd;
 
   if (amount) {
-    baseAmount = amount.mul(token.price).div(gmxPrice);
+    baseAmount = amount.mul(token.price).div(zmxPrice);
     bonusAmount = baseAmount.mul(token.bonus).div(100);
     totalAmount = baseAmount.add(bonusAmount);
 
-    baseAmountUsd = baseAmount.mul(gmxPrice);
-    bonusAmountUsd = bonusAmount.mul(gmxPrice);
-    totalAmountUsd = totalAmount.mul(gmxPrice);
+    baseAmountUsd = baseAmount.mul(zmxPrice);
+    bonusAmountUsd = bonusAmount.mul(zmxPrice);
+    totalAmountUsd = totalAmount.mul(zmxPrice);
   }
 
   const getError = () => {
@@ -155,7 +155,7 @@ function MigrationModal(props) {
         setIsApproving,
         library,
         tokenAddress: token.address,
-        spender: gmxMigratorAddress,
+        spender: zmxMigratorAddress,
         chainId: CHAIN_ID,
         onApproveSubmitted: () => {
           setIsPendingApproval(true);
@@ -165,7 +165,7 @@ function MigrationModal(props) {
     }
 
     setIsMigrating(true);
-    const contract = new ethers.Contract(gmxMigratorAddress, GmxMigrator.abi, library.getSigner());
+    const contract = new ethers.Contract(zmxMigratorAddress, GmxMigrator.abi, library.getSigner());
     contract
       .migrate(token.address, amount)
       .then(async (res) => {
@@ -345,26 +345,26 @@ export default function Migration() {
   );
 
   const { data: migratedAmounts, mutate: updateMigratedAmounts } = useSWR(
-    ["Migration:migratedAmounts", CHAIN_ID, gmxMigratorAddress, "getTokenAmounts"],
+    ["Migration:migratedAmounts", CHAIN_ID, zmxMigratorAddress, "getTokenAmounts"],
     {
       fetcher: contractFetcher(library, GmxMigrator, [tokenAddresses]),
     }
   );
 
-  let gmxBalance;
+  let zmxBalance;
   let totalMigratedGmx;
   let totalMigratedUsd;
 
   if (iouBalances) {
-    gmxBalance = bigNumberify(0);
+    zmxBalance = bigNumberify(0);
     totalMigratedGmx = bigNumberify(0);
 
     for (let i = 0; i < iouBalances.length / 2; i++) {
-      gmxBalance = gmxBalance.add(iouBalances[i * 2]);
+      zmxBalance = zmxBalance.add(iouBalances[i * 2]);
       totalMigratedGmx = totalMigratedGmx.add(iouBalances[i * 2 + 1]);
     }
 
-    totalMigratedUsd = totalMigratedGmx.mul(gmxPrice);
+    totalMigratedUsd = totalMigratedGmx.mul(zmxPrice);
   }
 
   useEffect(() => {
@@ -413,7 +413,7 @@ export default function Migration() {
         </div>
       </div>
       <div className="Migration-note">
-        <Trans>Your wallet: {formatAmount(gmxBalance, 18, 4, true)}</Trans> ZMX
+        <Trans>Your wallet: {formatAmount(zmxBalance, 18, 4, true)}</Trans> ZMX
       </div>
       <div className="Migration-cards">
         {tokens.map((token, index) => {

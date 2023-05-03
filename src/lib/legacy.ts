@@ -1174,7 +1174,7 @@ export function getBalanceAndSupplyData(balances) {
     return {};
   }
 
-  const keys = ["gmx", "esGmx", "glp", "stakedGmxTracker"];
+  const keys = ["zmx", "esGmx", "glp", "stakedGmxTracker"];
   const balanceData = {};
   const supplyData = {};
   const propsLength = 2;
@@ -1194,7 +1194,7 @@ export function getDepositBalanceData(depositBalances) {
   }
 
   const keys = [
-    "gmxInStakedGmx",
+    "zmxInStakedGmx",
     "esGmxInStakedGmx",
     "stakedGmxInBonusGmx",
     "bonusGmxInFeeGmx",
@@ -1216,7 +1216,7 @@ export function getVestingData(vestingInfo) {
     return;
   }
 
-  const keys = ["gmxVester", "glpVester"];
+  const keys = ["zmxVester", "glpVester"];
   const data = {};
   const propsLength = 7;
 
@@ -1276,8 +1276,8 @@ export function getProcessedData(
   aum,
   nativeTokenPrice,
   stakedGmxSupply,
-  gmxPrice,
-  gmxSupply
+  zmxPrice,
+  zmxSupply
 ) {
   if (
     !balanceData ||
@@ -1288,43 +1288,43 @@ export function getProcessedData(
     !aum ||
     !nativeTokenPrice ||
     !stakedGmxSupply ||
-    !gmxPrice ||
-    !gmxSupply
+    !zmxPrice ||
+    !zmxSupply
   ) {
     return {};
   }
 
   const data: any = {};
 
-  data.gmxBalance = balanceData.gmx;
-  data.gmxBalanceUsd = balanceData.gmx.mul(gmxPrice).div(expandDecimals(1, 18));
+  data.zmxBalance = balanceData.zmx;
+  data.zmxBalanceUsd = balanceData.zmx.mul(zmxPrice).div(expandDecimals(1, 18));
 
-  data.gmxSupply = bigNumberify(gmxSupply);
+  data.zmxSupply = bigNumberify(zmxSupply);
 
-  data.gmxSupplyUsd = data.gmxSupply.mul(gmxPrice).div(expandDecimals(1, 18));
+  data.zmxSupplyUsd = data.zmxSupply.mul(zmxPrice).div(expandDecimals(1, 18));
   data.stakedGmxSupply = stakedGmxSupply;
-  data.stakedGmxSupplyUsd = stakedGmxSupply.mul(gmxPrice).div(expandDecimals(1, 18));
-  data.gmxInStakedGmx = depositBalanceData.gmxInStakedGmx;
-  data.gmxInStakedGmxUsd = depositBalanceData.gmxInStakedGmx.mul(gmxPrice).div(expandDecimals(1, 18));
+  data.stakedGmxSupplyUsd = stakedGmxSupply.mul(zmxPrice).div(expandDecimals(1, 18));
+  data.zmxInStakedGmx = depositBalanceData.zmxInStakedGmx;
+  data.zmxInStakedGmxUsd = depositBalanceData.zmxInStakedGmx.mul(zmxPrice).div(expandDecimals(1, 18));
 
   data.esGmxBalance = balanceData.esGmx;
-  data.esGmxBalanceUsd = balanceData.esGmx.mul(gmxPrice).div(expandDecimals(1, 18));
+  data.esGmxBalanceUsd = balanceData.esGmx.mul(zmxPrice).div(expandDecimals(1, 18));
 
   data.stakedGmxTrackerSupply = supplyData.stakedGmxTracker;
-  data.stakedGmxTrackerSupplyUsd = supplyData.stakedGmxTracker.mul(gmxPrice).div(expandDecimals(1, 18));
+  data.stakedGmxTrackerSupplyUsd = supplyData.stakedGmxTracker.mul(zmxPrice).div(expandDecimals(1, 18));
   data.stakedEsGmxSupply = data.stakedGmxTrackerSupply.sub(data.stakedGmxSupply);
-  data.stakedEsGmxSupplyUsd = data.stakedEsGmxSupply.mul(gmxPrice).div(expandDecimals(1, 18));
+  data.stakedEsGmxSupplyUsd = data.stakedEsGmxSupply.mul(zmxPrice).div(expandDecimals(1, 18));
 
   data.esGmxInStakedGmx = depositBalanceData.esGmxInStakedGmx;
-  data.esGmxInStakedGmxUsd = depositBalanceData.esGmxInStakedGmx.mul(gmxPrice).div(expandDecimals(1, 18));
+  data.esGmxInStakedGmxUsd = depositBalanceData.esGmxInStakedGmx.mul(zmxPrice).div(expandDecimals(1, 18));
 
   data.bnGmxInFeeGmx = depositBalanceData.bnGmxInFeeGmx;
   data.bonusGmxInFeeGmx = depositBalanceData.bonusGmxInFeeGmx;
   data.feeGmxSupply = stakingData.feeGmxTracker.totalSupply;
-  data.feeGmxSupplyUsd = data.feeGmxSupply.mul(gmxPrice).div(expandDecimals(1, 18));
+  data.feeGmxSupplyUsd = data.feeGmxSupply.mul(zmxPrice).div(expandDecimals(1, 18));
 
   data.stakedGmxTrackerRewards = stakingData.stakedGmxTracker.claimable;
-  data.stakedGmxTrackerRewardsUsd = stakingData.stakedGmxTracker.claimable.mul(gmxPrice).div(expandDecimals(1, 18));
+  data.stakedGmxTrackerRewardsUsd = stakingData.stakedGmxTracker.claimable.mul(zmxPrice).div(expandDecimals(1, 18));
 
   data.bonusGmxTrackerRewards = stakingData.bonusGmxTracker.claimable;
 
@@ -1338,9 +1338,9 @@ export function getProcessedData(
 
   data.stakedGmxTrackerAnnualRewardsUsd = stakingData.stakedGmxTracker.tokensPerInterval
     .mul(SECONDS_PER_YEAR)
-    .mul(gmxPrice)
+    .mul(zmxPrice)
     .div(expandDecimals(1, 18));
-  data.gmxAprForEsGmx =
+  data.zmxAprForEsGmx =
     data.stakedGmxTrackerSupplyUsd && data.stakedGmxTrackerSupplyUsd.gt(0)
       ? data.stakedGmxTrackerAnnualRewardsUsd.mul(BASIS_POINTS_DIVISOR).div(data.stakedGmxTrackerSupplyUsd)
       : bigNumberify(0);
@@ -1348,14 +1348,14 @@ export function getProcessedData(
     .mul(SECONDS_PER_YEAR)
     .mul(nativeTokenPrice)
     .div(expandDecimals(1, 18));
-  data.gmxAprForNativeToken =
+  data.zmxAprForNativeToken =
     data.feeGmxSupplyUsd && data.feeGmxSupplyUsd.gt(0)
       ? data.feeGmxTrackerAnnualRewardsUsd.mul(BASIS_POINTS_DIVISOR).div(data.feeGmxSupplyUsd)
       : bigNumberify(0);
-  data.gmxBoostAprForNativeToken = data.gmxAprForNativeToken.mul(data.boostBasisPoints).div(BASIS_POINTS_DIVISOR);
-  data.gmxAprTotal = data.gmxAprForNativeToken.add(data.gmxAprForEsGmx);
-  data.gmxAprTotalWithBoost = data.gmxAprForNativeToken.add(data.gmxBoostAprForNativeToken).add(data.gmxAprForEsGmx);
-  data.gmxAprForNativeTokenWithBoost = data.gmxAprForNativeToken.add(data.gmxBoostAprForNativeToken);
+  data.zmxBoostAprForNativeToken = data.zmxAprForNativeToken.mul(data.boostBasisPoints).div(BASIS_POINTS_DIVISOR);
+  data.zmxAprTotal = data.zmxAprForNativeToken.add(data.zmxAprForEsGmx);
+  data.zmxAprTotalWithBoost = data.zmxAprForNativeToken.add(data.zmxBoostAprForNativeToken).add(data.zmxAprForEsGmx);
+  data.zmxAprForNativeTokenWithBoost = data.zmxAprForNativeToken.add(data.zmxBoostAprForNativeToken);
 
   data.totalGmxRewardsUsd = data.stakedGmxTrackerRewardsUsd.add(data.feeGmxTrackerRewardsUsd);
 
@@ -1371,14 +1371,14 @@ export function getProcessedData(
   data.glpBalanceUsd = depositBalanceData.glpInStakedGlp.mul(data.glpPrice).div(expandDecimals(1, GLP_DECIMALS));
 
   data.stakedGlpTrackerRewards = stakingData.stakedGlpTracker.claimable;
-  data.stakedGlpTrackerRewardsUsd = stakingData.stakedGlpTracker.claimable.mul(gmxPrice).div(expandDecimals(1, 18));
+  data.stakedGlpTrackerRewardsUsd = stakingData.stakedGlpTracker.claimable.mul(zmxPrice).div(expandDecimals(1, 18));
 
   data.feeGlpTrackerRewards = stakingData.feeGlpTracker.claimable;
   data.feeGlpTrackerRewardsUsd = stakingData.feeGlpTracker.claimable.mul(nativeTokenPrice).div(expandDecimals(1, 18));
 
   data.stakedGlpTrackerAnnualRewardsUsd = stakingData.stakedGlpTracker.tokensPerInterval
     .mul(SECONDS_PER_YEAR)
-    .mul(gmxPrice)
+    .mul(zmxPrice)
     .div(expandDecimals(1, 18));
   data.glpAprForEsGmx =
     data.glpSupplyUsd && data.glpSupplyUsd.gt(0)
@@ -1399,10 +1399,10 @@ export function getProcessedData(
   data.totalEsGmxRewards = data.stakedGmxTrackerRewards.add(data.stakedGlpTrackerRewards);
   data.totalEsGmxRewardsUsd = data.stakedGmxTrackerRewardsUsd.add(data.stakedGlpTrackerRewardsUsd);
 
-  data.gmxVesterRewards = vestingData.gmxVester.claimable;
+  data.zmxVesterRewards = vestingData.zmxVester.claimable;
   data.glpVesterRewards = vestingData.glpVester.claimable;
-  data.totalVesterRewards = data.gmxVesterRewards.add(data.glpVesterRewards);
-  data.totalVesterRewardsUsd = data.totalVesterRewards.mul(gmxPrice).div(expandDecimals(1, 18));
+  data.totalVesterRewards = data.zmxVesterRewards.add(data.glpVesterRewards);
+  data.totalVesterRewardsUsd = data.totalVesterRewards.mul(zmxPrice).div(expandDecimals(1, 18));
 
   data.totalNativeTokenRewards = data.feeGmxTrackerRewards.add(data.feeGlpTrackerRewards);
   data.totalNativeTokenRewardsUsd = data.feeGmxTrackerRewardsUsd.add(data.feeGlpTrackerRewardsUsd);
@@ -1429,7 +1429,7 @@ export function getHomeUrl() {
     return "http://localhost:3010";
   }
 
-  return "https://gmx.io";
+  return "https://zmx.io";
 }
 
 export function getAppBaseUrl() {
@@ -1437,15 +1437,15 @@ export function getAppBaseUrl() {
     return "http://localhost:3011/#";
   }
 
-  return "https://app.gmx.io/#";
+  return "https://app.zmx.io/#";
 }
 
 export function getRootShareApiUrl() {
   if (isLocal()) {
-    return "https://gmxs.vercel.app";
+    return "https://zmxs.vercel.app";
   }
 
-  return "https://share.gmx.io";
+  return "https://share.zmx.io";
 }
 
 export function getTradePageUrl() {
@@ -1453,7 +1453,7 @@ export function getTradePageUrl() {
     return "http://localhost:3011/#/trade";
   }
 
-  return "https://app.gmx.io/#/trade";
+  return "https://app.zmx.io/#/trade";
 }
 
 export function importImage(name) {

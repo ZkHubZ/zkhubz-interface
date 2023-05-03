@@ -313,7 +313,7 @@ function UnstakeModal(props) {
           <div className="Modal-note">
             <Trans>
               Unstaking will burn&nbsp;
-              <ExternalLink className="display-inline" href="https://gmxio.gitbook.io/gmx/rewards">
+              <ExternalLink className="display-inline" href="https://zmxio.gitbook.io/zmx/rewards">
                 {formatAmount(burnAmount, 18, 4, true)} Multiplier Points
               </ExternalLink>
               .&nbsp;
@@ -617,19 +617,19 @@ function CompoundModal(props) {
   } = props;
   const [isCompounding, setIsCompounding] = useState(false);
   const [shouldClaimGmx, setShouldClaimGmx] = useLocalStorageSerializeKey(
-    [chainId, "StakeV2-compound-should-claim-gmx"],
+    [chainId, "StakeV2-compound-should-claim-zmx"],
     true
   );
   const [shouldStakeGmx, setShouldStakeGmx] = useLocalStorageSerializeKey(
-    [chainId, "StakeV2-compound-should-stake-gmx"],
+    [chainId, "StakeV2-compound-should-stake-zmx"],
     true
   );
   const [shouldClaimEsGmx, setShouldClaimEsGmx] = useLocalStorageSerializeKey(
-    [chainId, "StakeV2-compound-should-claim-es-gmx"],
+    [chainId, "StakeV2-compound-should-claim-es-zmx"],
     true
   );
   const [shouldStakeEsGmx, setShouldStakeEsGmx] = useLocalStorageSerializeKey(
-    [chainId, "StakeV2-compound-should-stake-es-gmx"],
+    [chainId, "StakeV2-compound-should-stake-es-zmx"],
     true
   );
   const [shouldStakeMultiplierPoints, setShouldStakeMultiplierPoints] = useState(true);
@@ -642,13 +642,13 @@ function CompoundModal(props) {
     true
   );
 
-  const gmxAddress = getContract(chainId, "ZMX");
+  const zmxAddress = getContract(chainId, "ZMX");
   const stakedGmxTrackerAddress = getContract(chainId, "StakedGmxTracker");
 
   const [isApproving, setIsApproving] = useState(false);
 
   const { data: tokenAllowance } = useSWR(
-    active && [active, chainId, gmxAddress, "allowance", account, stakedGmxTrackerAddress],
+    active && [active, chainId, zmxAddress, "allowance", account, stakedGmxTrackerAddress],
     {
       fetcher: contractFetcher(library, Token),
     }
@@ -678,7 +678,7 @@ function CompoundModal(props) {
       approveTokens({
         setIsApproving,
         library,
-        tokenAddress: gmxAddress,
+        tokenAddress: zmxAddress,
         spender: stakedGmxTrackerAddress,
         chainId,
       });
@@ -806,11 +806,11 @@ function ClaimModal(props) {
   } = props;
   const [isClaiming, setIsClaiming] = useState(false);
   const [shouldClaimGmx, setShouldClaimGmx] = useLocalStorageSerializeKey(
-    [chainId, "StakeV2-claim-should-claim-gmx"],
+    [chainId, "StakeV2-claim-should-claim-zmx"],
     true
   );
   const [shouldClaimEsGmx, setShouldClaimEsGmx] = useLocalStorageSerializeKey(
-    [chainId, "StakeV2-claim-should-claim-es-gmx"],
+    [chainId, "StakeV2-claim-should-claim-es-zmx"],
     true
   );
   const [shouldClaimWeth, setShouldClaimWeth] = useLocalStorageSerializeKey(
@@ -961,7 +961,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
 
   const vaultAddress = getContract(chainId, "Vault");
   const nativeTokenAddress = getContract(chainId, "NATIVE_TOKEN");
-  const gmxAddress = getContract(chainId, "ZMX");
+  const zmxAddress = getContract(chainId, "ZMX");
   const esGmxAddress = getContract(chainId, "ES_GMX");
   const bnGmxAddress = getContract(chainId, "BN_GMX");
   const glpAddress = getContract(chainId, "ZLP");
@@ -978,19 +978,19 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
   const stakedGmxDistributorAddress = getContract(chainId, "StakedGmxDistributor");
   const stakedGlpDistributorAddress = getContract(chainId, "StakedGlpDistributor");
 
-  const gmxVesterAddress = getContract(chainId, "GmxVester");
+  const zmxVesterAddress = getContract(chainId, "GmxVester");
   const glpVesterAddress = getContract(chainId, "GlpVester");
 
-  const vesterAddresses = [gmxVesterAddress, glpVesterAddress];
+  const vesterAddresses = [zmxVesterAddress, glpVesterAddress];
 
   const excludedEsGmxAccounts = [stakedGmxDistributorAddress, stakedGlpDistributorAddress];
 
   const nativeTokenSymbol = getConstant(chainId, "nativeTokenSymbol");
   const wrappedTokenSymbol = getConstant(chainId, "wrappedTokenSymbol");
 
-  const walletTokens = [gmxAddress, esGmxAddress, glpAddress, stakedGmxTrackerAddress];
+  const walletTokens = [zmxAddress, esGmxAddress, glpAddress, stakedGmxTrackerAddress];
   const depositTokens = [
-    gmxAddress,
+    zmxAddress,
     esGmxAddress,
     stakedGmxTrackerAddress,
     bonusGmxTrackerAddress,
@@ -1047,7 +1047,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
   );
 
   const { data: stakedGmxSupply } = useSWR(
-    [`StakeV2:stakedGmxSupply:${active}`, chainId, gmxAddress, "balanceOf", stakedGmxTrackerAddress],
+    [`StakeV2:stakedGmxSupply:${active}`, chainId, zmxAddress, "balanceOf", stakedGmxTrackerAddress],
     {
       fetcher: contractFetcher(library, Token),
     }
@@ -1078,7 +1078,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     }
   );
 
-  const { gmxPrice, gmxPriceFromArbitrum, gmxPriceFromAvalanche } = useGmxPrice(
+  const { zmxPrice, zmxPriceFromArbitrum, zmxPriceFromAvalanche } = useGmxPrice(
     chainId,
     { arbitrum: chainId === ARBITRUM ? library : undefined },
     active
@@ -1088,16 +1088,16 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
 
   let { avax: avaxGmxStaked, arbitrum: arbitrumGmxStaked, total: totalGmxStaked } = useTotalGmxStaked();
 
-  const gmxSupplyUrl = getServerUrl(chainId, "/gmx_supply");
-  const { data: gmxSupply } = useSWR([gmxSupplyUrl], {
+  const zmxSupplyUrl = getServerUrl(chainId, "/zmx_supply");
+  const { data: zmxSupply } = useSWR([zmxSupplyUrl], {
     fetcher: (...args) => fetch(...args).then((res) => res.text()),
   });
 
   const isGmxTransferEnabled = true;
 
   let esGmxSupplyUsd;
-  if (esGmxSupply && gmxPrice) {
-    esGmxSupplyUsd = esGmxSupply.mul(gmxPrice).div(expandDecimals(1, 18));
+  if (esGmxSupply && zmxPrice) {
+    esGmxSupplyUsd = esGmxSupply.mul(zmxPrice).div(expandDecimals(1, 18));
   }
 
   let aum;
@@ -1119,8 +1119,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     aum,
     nativeTokenPrice,
     stakedGmxSupply,
-    gmxPrice,
-    gmxSupply
+    zmxPrice,
+    zmxSupply
   );
 
   let hasMultiplierPoints = false;
@@ -1144,24 +1144,24 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
   const bonusGmxInFeeGmx = processedData ? processedData.bonusGmxInFeeGmx : undefined;
 
   let stakedGmxSupplyUsd;
-  if (!totalGmxStaked.isZero() && gmxPrice) {
-    stakedGmxSupplyUsd = totalGmxStaked.mul(gmxPrice).div(expandDecimals(1, 18));
+  if (!totalGmxStaked.isZero() && zmxPrice) {
+    stakedGmxSupplyUsd = totalGmxStaked.mul(zmxPrice).div(expandDecimals(1, 18));
   }
 
   let totalSupplyUsd;
-  if (totalGmxSupply && !totalGmxSupply.isZero() && gmxPrice) {
-    totalSupplyUsd = totalGmxSupply.mul(gmxPrice).div(expandDecimals(1, 18));
+  if (totalGmxSupply && !totalGmxSupply.isZero() && zmxPrice) {
+    totalSupplyUsd = totalGmxSupply.mul(zmxPrice).div(expandDecimals(1, 18));
   }
 
   let maxUnstakeableGmx = bigNumberify(0);
   if (
     totalRewardTokens &&
     vestingData &&
-    vestingData.gmxVesterPairAmount &&
+    vestingData.zmxVesterPairAmount &&
     multiplierPointsAmount &&
     processedData.bonusGmxInFeeGmx
   ) {
-    const availableTokens = totalRewardTokens.sub(vestingData.gmxVesterPairAmount);
+    const availableTokens = totalRewardTokens.sub(vestingData.zmxVesterPairAmount);
     const stakedTokens = processedData.bonusGmxInFeeGmx;
     const divisor = multiplierPointsAmount.add(stakedTokens);
     if (divisor.gt(0)) {
@@ -1177,10 +1177,10 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
 
     setIsStakeModalVisible(true);
     setStakeModalTitle(t`Stake ZMX`);
-    setStakeModalMaxAmount(processedData.gmxBalance);
+    setStakeModalMaxAmount(processedData.zmxBalance);
     setStakeValue("");
     setStakingTokenSymbol("ZMX");
-    setStakingTokenAddress(gmxAddress);
+    setStakingTokenAddress(zmxAddress);
     setStakingFarmAddress(stakedGmxTrackerAddress);
     setStakeMethodName("stakeGmx");
   };
@@ -1197,7 +1197,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
   };
 
   const showGmxVesterDepositModal = () => {
-    let remainingVestableAmount = vestingData.gmxVester.maxVestableAmount.sub(vestingData.gmxVester.vestedAmount);
+    let remainingVestableAmount = vestingData.zmxVester.maxVestableAmount.sub(vestingData.zmxVester.vestedAmount);
     if (processedData.esGmxBalance.lt(remainingVestableAmount)) {
       remainingVestableAmount = processedData.esGmxBalance;
     }
@@ -1207,14 +1207,14 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     setVesterDepositStakeTokenLabel("staked ZMX + esGMX + Multiplier Points");
     setVesterDepositMaxAmount(remainingVestableAmount);
     setVesterDepositBalance(processedData.esGmxBalance);
-    setVesterDepositEscrowedBalance(vestingData.gmxVester.escrowedBalance);
-    setVesterDepositVestedAmount(vestingData.gmxVester.vestedAmount);
-    setVesterDepositMaxVestableAmount(vestingData.gmxVester.maxVestableAmount);
-    setVesterDepositAverageStakedAmount(vestingData.gmxVester.averageStakedAmount);
-    setVesterDepositReserveAmount(vestingData.gmxVester.pairAmount);
+    setVesterDepositEscrowedBalance(vestingData.zmxVester.escrowedBalance);
+    setVesterDepositVestedAmount(vestingData.zmxVester.vestedAmount);
+    setVesterDepositMaxVestableAmount(vestingData.zmxVester.maxVestableAmount);
+    setVesterDepositAverageStakedAmount(vestingData.zmxVester.averageStakedAmount);
+    setVesterDepositReserveAmount(vestingData.zmxVester.pairAmount);
     setVesterDepositMaxReserveAmount(totalRewardTokens);
     setVesterDepositValue("");
-    setVesterDepositAddress(gmxVesterAddress);
+    setVesterDepositAddress(zmxVesterAddress);
   };
 
   const showGlpVesterDepositModal = () => {
@@ -1239,14 +1239,14 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
   };
 
   const showGmxVesterWithdrawModal = () => {
-    if (!vestingData || !vestingData.gmxVesterVestedAmount || vestingData.gmxVesterVestedAmount.eq(0)) {
+    if (!vestingData || !vestingData.zmxVesterVestedAmount || vestingData.zmxVesterVestedAmount.eq(0)) {
       helperToast.error(t`You have not deposited any tokens for vesting.`);
       return;
     }
 
     setIsVesterWithdrawModalVisible(true);
     setVesterWithdrawTitle(t`Withdraw from ZMX Vault`);
-    setVesterWithdrawAddress(gmxVesterAddress);
+    setVesterWithdrawAddress(zmxVesterAddress);
   };
 
   const showGlpVesterWithdrawModal = () => {
@@ -1267,18 +1267,18 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     }
     setIsUnstakeModalVisible(true);
     setUnstakeModalTitle(t`Unstake ZMX`);
-    let maxAmount = processedData.gmxInStakedGmx;
+    let maxAmount = processedData.zmxInStakedGmx;
     if (
-      processedData.gmxInStakedGmx &&
+      processedData.zmxInStakedGmx &&
       vestingData &&
-      vestingData.gmxVesterPairAmount.gt(0) &&
+      vestingData.zmxVesterPairAmount.gt(0) &&
       maxUnstakeableGmx &&
-      maxUnstakeableGmx.lt(processedData.gmxInStakedGmx)
+      maxUnstakeableGmx.lt(processedData.zmxInStakedGmx)
     ) {
       maxAmount = maxUnstakeableGmx;
     }
     setUnstakeModalMaxAmount(maxAmount);
-    setUnstakeModalReservedAmount(vestingData.gmxVesterPairAmount);
+    setUnstakeModalReservedAmount(vestingData.zmxVesterPairAmount);
     setUnstakeValue("");
     setUnstakingTokenSymbol("ZMX");
     setUnstakeMethodName("unstakeGmx");
@@ -1291,14 +1291,14 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     if (
       processedData.esGmxInStakedGmx &&
       vestingData &&
-      vestingData.gmxVesterPairAmount.gt(0) &&
+      vestingData.zmxVesterPairAmount.gt(0) &&
       maxUnstakeableGmx &&
       maxUnstakeableGmx.lt(processedData.esGmxInStakedGmx)
     ) {
       maxAmount = maxUnstakeableGmx;
     }
     setUnstakeModalMaxAmount(maxAmount);
-    setUnstakeModalReservedAmount(vestingData.gmxVesterPairAmount);
+    setUnstakeModalReservedAmount(vestingData.zmxVesterPairAmount);
     setUnstakeValue("");
     setUnstakingTokenSymbol("esGMX");
     setUnstakeMethodName("unstakeEsGmx");
@@ -1317,7 +1317,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
           return (
             <Trans>
               Boost your rewards with Multiplier Points.&nbsp;
-              <ExternalLink href="https://gmxio.gitbook.io/gmx/rewards#multiplier-points">More info</ExternalLink>.
+              <ExternalLink href="https://zmxio.gitbook.io/zmx/rewards#multiplier-points">More info</ExternalLink>.
             </Trans>
           );
         }}
@@ -1327,9 +1327,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
 
   let earnMsg;
   if (totalRewardTokensAndGlp && totalRewardTokensAndGlp.gt(0)) {
-    let gmxAmountStr;
-    if (processedData.gmxInStakedGmx && processedData.gmxInStakedGmx.gt(0)) {
-      gmxAmountStr = formatAmount(processedData.gmxInStakedGmx, 18, 2, true) + " ZMX";
+    let zmxAmountStr;
+    if (processedData.zmxInStakedGmx && processedData.zmxInStakedGmx.gt(0)) {
+      zmxAmountStr = formatAmount(processedData.zmxInStakedGmx, 18, 2, true) + " ZMX";
     }
     let esGmxAmountStr;
     if (processedData.esGmxInStakedGmx && processedData.esGmxInStakedGmx.gt(0)) {
@@ -1343,7 +1343,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     if (processedData.glpBalance && processedData.glpBalance.gt(0)) {
       glpStr = formatAmount(processedData.glpBalance, 18, 2, true) + " ZLP";
     }
-    const amountStr = [gmxAmountStr, esGmxAmountStr, mpAmountStr, glpStr].filter((s) => s).join(", ");
+    const amountStr = [zmxAmountStr, esGmxAmountStr, mpAmountStr, glpStr].filter((s) => s).join(", ");
     earnMsg = (
       <div>
         <Trans>
@@ -1458,8 +1458,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
           </div>
           <div className="Page-description">
             <Trans>
-              Stake <ExternalLink href="https://gmxio.gitbook.io/gmx/tokenomics">ZMX</ExternalLink> and{" "}
-              <ExternalLink href="https://gmxio.gitbook.io/gmx/glp">ZLP</ExternalLink> to earn rewards.
+              Stake <ExternalLink href="https://zmxio.gitbook.io/zmx/tokenomics">ZMX</ExternalLink> and{" "}
+              <ExternalLink href="https://zmxio.gitbook.io/zmx/glp">ZLP</ExternalLink> to earn rewards.
             </Trans>
           </div>
           {earnMsg && <div className="Page-description">{earnMsg}</div>}
@@ -1467,7 +1467,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
       </div>
       <div className="StakeV2-content">
         <div className="StakeV2-cards">
-          <div className="App-card StakeV2-gmx-card">
+          <div className="App-card StakeV2-zmx-card">
             <div className="App-card-title">ZMX</div>
             <div className="App-card-divider"></div>
             <div className="App-card-content">
@@ -1476,21 +1476,21 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Price</Trans>
                 </div>
                 <div>
-                  {!gmxPrice && "..."}
-                  {gmxPrice && (
+                  {!zmxPrice && "..."}
+                  {zmxPrice && (
                     <Tooltip
                       position="right-bottom"
                       className="nowrap"
-                      handle={"$" + formatAmount(gmxPrice, USD_DECIMALS, 2, true)}
+                      handle={"$" + formatAmount(zmxPrice, USD_DECIMALS, 2, true)}
                       renderContent={() => (
                         <>
                           <StatsTooltipRow
                             label={t`Price on Avalanche`}
-                            value={formatAmount(gmxPriceFromAvalanche, USD_DECIMALS, 2, true)}
+                            value={formatAmount(zmxPriceFromAvalanche, USD_DECIMALS, 2, true)}
                           />
                           <StatsTooltipRow
                             label={t`Price on Arbitrum`}
-                            value={formatAmount(gmxPriceFromArbitrum, USD_DECIMALS, 2, true)}
+                            value={formatAmount(zmxPriceFromArbitrum, USD_DECIMALS, 2, true)}
                           />
                         </>
                       )}
@@ -1503,8 +1503,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Wallet</Trans>
                 </div>
                 <div>
-                  {formatKeyAmount(processedData, "gmxBalance", 18, 2, true)} ZMX ($
-                  {formatKeyAmount(processedData, "gmxBalanceUsd", USD_DECIMALS, 2, true)})
+                  {formatKeyAmount(processedData, "zmxBalance", 18, 2, true)} ZMX ($
+                  {formatKeyAmount(processedData, "zmxBalanceUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-row">
@@ -1512,8 +1512,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Staked</Trans>
                 </div>
                 <div>
-                  {formatKeyAmount(processedData, "gmxInStakedGmx", 18, 2, true)} ZMX ($
-                  {formatKeyAmount(processedData, "gmxInStakedGmxUsd", USD_DECIMALS, 2, true)})
+                  {formatKeyAmount(processedData, "zmxInStakedGmx", 18, 2, true)} ZMX ($
+                  {formatKeyAmount(processedData, "zmxInStakedGmxUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-divider"></div>
@@ -1523,7 +1523,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                 </div>
                 <div>
                   <Tooltip
-                    handle={`${formatKeyAmount(processedData, "gmxAprTotalWithBoost", 2, 2, true)}%`}
+                    handle={`${formatKeyAmount(processedData, "zmxAprTotalWithBoost", 2, 2, true)}%`}
                     position="right-bottom"
                     renderContent={() => (
                       <GMXAprTooltip processedData={processedData} nativeTokenSymbol={nativeTokenSymbol} />
@@ -1648,7 +1648,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
               </div>
               <div className="App-card-divider" />
               <div className="App-card-buttons m-0">
-                <Button variant="semi-clear" to="/buy_gmx">
+                <Button variant="semi-clear" to="/buy_zmx">
                   <Trans>Buy ZMX</Trans>
                 </Button>
                 {active && (
@@ -1801,7 +1801,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                             <br />
                             <br />
                             Historical ZLP APRs can be checked in this{" "}
-                            <ExternalLink href="https://dune.com/saulius/gmx-analytics">
+                            <ExternalLink href="https://dune.com/saulius/zmx-analytics">
                               community dashboard
                             </ExternalLink>
                             .
@@ -1903,7 +1903,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                 <div className="label">
                   <Trans>Price</Trans>
                 </div>
-                <div>${formatAmount(gmxPrice, USD_DECIMALS, 2, true)}</div>
+                <div>${formatAmount(zmxPrice, USD_DECIMALS, 2, true)}</div>
               </div>
               <div className="App-card-row">
                 <div className="label">
@@ -1930,7 +1930,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                 </div>
                 <div>
                   <Tooltip
-                    handle={`${formatKeyAmount(processedData, "gmxAprTotalWithBoost", 2, 2, true)}%`}
+                    handle={`${formatKeyAmount(processedData, "zmxAprTotalWithBoost", 2, 2, true)}%`}
                     position="right-bottom"
                     renderContent={() => (
                       <GMXAprTooltip processedData={processedData} nativeTokenSymbol={nativeTokenSymbol} />
@@ -1994,14 +1994,14 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
               Convert esGMX tokens to ZMX tokens.
               <br />
               Please read the{" "}
-              <ExternalLink href="https://gmxio.gitbook.io/gmx/rewards#vesting">vesting details</ExternalLink> before
+              <ExternalLink href="https://zmxio.gitbook.io/zmx/rewards#vesting">vesting details</ExternalLink> before
               using the vaults.
             </Trans>
           </div>
         </div>
         <div>
           <div className="StakeV2-cards">
-            <div className="App-card StakeV2-gmx-card">
+            <div className="App-card StakeV2-zmx-card">
               <div className="App-card-title">
                 <Trans>ZMX Vault</Trans>
               </div>
@@ -2021,7 +2021,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                             <StatsTooltipRow
                               showDollar={false}
                               label="ZMX"
-                              value={formatAmount(processedData.gmxInStakedGmx, 18, 2, true)}
+                              value={formatAmount(processedData.zmxInStakedGmx, 18, 2, true)}
                             />
 
                             <StatsTooltipRow
@@ -2045,7 +2045,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                     <Trans>Reserved for Vesting</Trans>
                   </div>
                   <div>
-                    {formatKeyAmount(vestingData, "gmxVesterPairAmount", 18, 2, true)} /{" "}
+                    {formatKeyAmount(vestingData, "zmxVesterPairAmount", 18, 2, true)} /{" "}
                     {formatAmount(totalRewardTokens, 18, 2, true)}
                   </div>
                 </div>
@@ -2055,9 +2055,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   </div>
                   <div>
                     <Tooltip
-                      handle={`${formatKeyAmount(vestingData, "gmxVesterClaimSum", 18, 4, true)} / ${formatKeyAmount(
+                      handle={`${formatKeyAmount(vestingData, "zmxVesterClaimSum", 18, 4, true)} / ${formatKeyAmount(
                         vestingData,
-                        "gmxVesterVestedAmount",
+                        "zmxVesterVestedAmount",
                         18,
                         4,
                         true
@@ -2067,9 +2067,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                         return (
                           <div>
                             <Trans>
-                              {formatKeyAmount(vestingData, "gmxVesterClaimSum", 18, 4, true)} tokens have been
+                              {formatKeyAmount(vestingData, "zmxVesterClaimSum", 18, 4, true)} tokens have been
                               converted to ZMX from the{" "}
-                              {formatKeyAmount(vestingData, "gmxVesterVestedAmount", 18, 4, true)} esGMX deposited for
+                              {formatKeyAmount(vestingData, "zmxVesterVestedAmount", 18, 4, true)} esGMX deposited for
                               vesting.
                             </Trans>
                           </div>
@@ -2084,11 +2084,11 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   </div>
                   <div>
                     <Tooltip
-                      handle={`${formatKeyAmount(vestingData, "gmxVesterClaimable", 18, 4, true)} ZMX`}
+                      handle={`${formatKeyAmount(vestingData, "zmxVesterClaimable", 18, 4, true)} ZMX`}
                       position="right-bottom"
                       renderContent={() => (
                         <Trans>
-                          {formatKeyAmount(vestingData, "gmxVesterClaimable", 18, 4, true)} ZMX tokens can be claimed,
+                          {formatKeyAmount(vestingData, "zmxVesterClaimable", 18, 4, true)} ZMX tokens can be claimed,
                           use the options under the Total Rewards section to claim them.
                         </Trans>
                       )}
@@ -2115,7 +2115,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                 </div>
               </div>
             </div>
-            <div className="App-card StakeV2-gmx-card">
+            <div className="App-card StakeV2-zmx-card">
               <div className="App-card-title">
                 <Trans>ZLP Vault</Trans>
               </div>

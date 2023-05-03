@@ -4,16 +4,16 @@ import { getSubgraphUrlKey } from "./localStorage";
 
 const SUBGRAPH_URLS = {
   [ARBITRUM]: {
-    // stats: "https://api.thegraph.com/subgraphs/name/gdev8317/gmx-arbitrum-stats
-    stats: "https://api.thegraph.com/subgraphs/name/gmx-io/gmx-stats",
-    referrals: "https://api.thegraph.com/subgraphs/name/gmx-io/gmx-arbitrum-referrals",
-    nissohVault: "https://api.thegraph.com/subgraphs/name/nissoh/gmx-vault",
+    // stats: "https://api.thegraph.com/subgraphs/name/gdev8317/zmx-arbitrum-stats
+    stats: "https://api.thegraph.com/subgraphs/name/zmx-io/zmx-stats",
+    referrals: "https://api.thegraph.com/subgraphs/name/zmx-io/zmx-arbitrum-referrals",
+    nissohVault: "https://api.thegraph.com/subgraphs/name/nissoh/zmx-vault",
   },
 
   [AVALANCHE]: {
-    // stats: "https://api.thegraph.com/subgraphs/name/gdev8317/gmx-avalanche-staging", // testing
-    stats: "https://api.thegraph.com/subgraphs/name/gmx-io/gmx-avalanche-stats",
-    referrals: "https://api.thegraph.com/subgraphs/name/gmx-io/gmx-avalanche-referrals",
+    // stats: "https://api.thegraph.com/subgraphs/name/gdev8317/zmx-avalanche-staging", // testing
+    stats: "https://api.thegraph.com/subgraphs/name/zmx-io/zmx-avalanche-stats",
+    referrals: "https://api.thegraph.com/subgraphs/name/zmx-io/zmx-avalanche-referrals",
   },
 
   [ETH_MAINNET]: {

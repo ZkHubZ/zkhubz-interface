@@ -15,7 +15,7 @@ import ExternalLink from "components/ExternalLink/ExternalLink";
 import { getIcon } from "config/icons";
 
 const glpIcon = getIcon("common", "glp");
-const gmxIcon = getIcon("common", "gmx");
+const zmxIcon = getIcon("common", "zmx");
 
 export default function TokenCard({ showRedirectModal, redirectPopupTimestamp }) {
   const isHome = isHomeSite();
@@ -63,26 +63,26 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
     <div className="Home-token-card-options">
       <div className="Home-token-card-option">
         <div className="Home-token-card-option-icon">
-          <img src={gmxIcon} width="40" alt="ZMX Icons" /> ZMX
+          <img src={zmxIcon} width="40" alt="ZMX Icons" /> ZMX
         </div>
         <div className="Home-token-card-option-info">
           <div className="Home-token-card-option-title">
             <Trans>ZMX is the utility and governance token. Accrues 30% of the platform's generated fees.</Trans>
           </div>
           <div className="Home-token-card-option-apr">
-            <Trans>Arbitrum APR:</Trans> <APRLabel chainId={ARBITRUM} label="gmxAprTotal" />,{" "}
-            <Trans>Avalanche APR:</Trans> <APRLabel chainId={AVALANCHE} label="gmxAprTotal" key="AVALANCHE" />
+            <Trans>Arbitrum APR:</Trans> <APRLabel chainId={ARBITRUM} label="zmxAprTotal" />,{" "}
+            <Trans>Avalanche APR:</Trans> <APRLabel chainId={AVALANCHE} label="zmxAprTotal" key="AVALANCHE" />
           </div>
           <div className="Home-token-card-option-action">
             <div className="buy">
-              <BuyLink to="/buy_gmx" className="default-btn" network={ARBITRUM}>
+              <BuyLink to="/buy_zmx" className="default-btn" network={ARBITRUM}>
                 <Trans>Buy on Arbitrum</Trans>
               </BuyLink>
-              <BuyLink to="/buy_gmx" className="default-btn" network={AVALANCHE}>
+              <BuyLink to="/buy_zmx" className="default-btn" network={AVALANCHE}>
                 <Trans>Buy on Avalanche</Trans>
               </BuyLink>
             </div>
-            <ExternalLink href="https://gmxio.gitbook.io/gmx/tokenomics" className="default-btn read-more">
+            <ExternalLink href="https://zmxio.gitbook.io/zmx/tokenomics" className="default-btn read-more">
               <Trans>Read more</Trans>
             </ExternalLink>
           </div>
@@ -110,7 +110,7 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
               </BuyLink>
             </div>
             <a
-              href="https://gmxio.gitbook.io/gmx/glp"
+              href="https://zmxio.gitbook.io/zmx/glp"
               target="_blank"
               rel="noreferrer"
               className="default-btn read-more"

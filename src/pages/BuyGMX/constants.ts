@@ -38,8 +38,8 @@ export const FIAT_GATEWAYS: Exchange[] = [
     name: "Banxa",
     icon: "ic_banxa.svg",
     links: {
-      [ARBITRUM]: "https://gmx.banxa.com/?coinType=ZMX&fiatType=USD&fiatAmount=500&blockchain=arbitrum",
-      [AVALANCHE]: "https://gmx.banxa.com/?coinType=ZMX&fiatType=USD&fiatAmount=500&blockchain=avalanche",
+      [ARBITRUM]: "https://zmx.banxa.com/?coinType=ZMX&fiatType=USD&fiatAmount=500&blockchain=arbitrum",
+      [AVALANCHE]: "https://zmx.banxa.com/?coinType=ZMX&fiatType=USD&fiatAmount=500&blockchain=avalanche",
     },
   },
   {
@@ -94,8 +94,8 @@ export const BUY_NATIVE_TOKENS: Exchange[] = [
     name: "Banxa",
     icon: "ic_banxa.svg",
     links: {
-      [ARBITRUM]: "https://gmx.banxa.com/?coinType=ETH&fiatType=USD&fiatAmount=500&blockchain=arbitrum",
-      [AVALANCHE]: "https://gmx.banxa.com/?coinType=AVAX&fiatType=USD&fiatAmount=500&blockchain=avalanche",
+      [ARBITRUM]: "https://zmx.banxa.com/?coinType=ETH&fiatType=USD&fiatAmount=500&blockchain=arbitrum",
+      [AVALANCHE]: "https://zmx.banxa.com/?coinType=AVAX&fiatType=USD&fiatAmount=500&blockchain=avalanche",
     },
   },
   {
@@ -210,8 +210,8 @@ export const CENTRALISED_EXCHANGES: Exchange[] = [
     name: "Huobi",
     icon: "ic_huobi.svg",
     links: {
-      [ARBITRUM]: "https://www.huobi.com/en-us/exchange/gmx_usdt/",
-      [AVALANCHE]: "https://www.huobi.com/en-us/exchange/gmx_usdt/",
+      [ARBITRUM]: "https://www.huobi.com/en-us/exchange/zmx_usdt/",
+      [AVALANCHE]: "https://www.huobi.com/en-us/exchange/zmx_usdt/",
     },
   },
 ];
@@ -245,8 +245,8 @@ export const DECENTRALISED_AGGRIGATORS: Exchange[] = [
     name: "KyberSwap",
     icon: "ic_kyberswap.svg",
     links: {
-      [ARBITRUM]: "https://kyberswap.com/swap/arbitrum/eth-to-gmx",
-      [AVALANCHE]: "https://kyberswap.com/swap/avalanche/avax-to-gmx",
+      [ARBITRUM]: "https://kyberswap.com/swap/arbitrum/eth-to-zmx",
+      [AVALANCHE]: "https://kyberswap.com/swap/avalanche/avax-to-zmx",
     },
   },
   {

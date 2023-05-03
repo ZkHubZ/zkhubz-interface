@@ -8,7 +8,7 @@ export function isDevelopment() {
   const isProductionPreview = Boolean(localStorage.getItem(PRODUCTION_PREVIEW_KEY));
 
   return (
-    !window.location.host?.includes("gmx.io") && !window.location.host?.includes("ipfs.io") && !isProductionPreview
+    !window.location.host?.includes("zmx.io") && !window.location.host?.includes("ipfs.io") && !isProductionPreview
   );
 }
 

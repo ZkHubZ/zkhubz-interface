@@ -204,7 +204,7 @@ export default function GlpSwap(props) {
     }
   );
 
-  const { gmxPrice } = useGmxPrice(chainId, { arbitrum: chainId === ARBITRUM ? library : undefined }, active);
+  const { zmxPrice } = useGmxPrice(chainId, { arbitrum: chainId === ARBITRUM ? library : undefined }, active);
 
   const rewardTrackersForStakingInfo = [stakedGlpTrackerAddress, feeGlpTrackerAddress];
   const { data: stakingInfo } = useSWR(
@@ -309,7 +309,7 @@ export default function GlpSwap(props) {
   let stakedGlpTrackerApr;
 
   if (
-    gmxPrice &&
+    zmxPrice &&
     stakingData &&
     stakingData.stakedGlpTracker &&
     stakingData.stakedGlpTracker.tokensPerInterval &&
@@ -318,7 +318,7 @@ export default function GlpSwap(props) {
   ) {
     stakedGlpTrackerAnnualRewardsUsd = stakingData.stakedGlpTracker.tokensPerInterval
       .mul(SECONDS_PER_YEAR)
-      .mul(gmxPrice)
+      .mul(zmxPrice)
       .div(expandDecimals(1, 18));
     stakedGlpTrackerApr = stakedGlpTrackerAnnualRewardsUsd.mul(BASIS_POINTS_DIVISOR).div(glpSupplyUsd);
     totalApr = totalApr.add(stakedGlpTrackerApr);

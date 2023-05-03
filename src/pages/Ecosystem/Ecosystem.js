@@ -22,24 +22,24 @@ const NETWORK_ICON_ALTS = {
 };
 
 export default function Ecosystem() {
-  const gmxPages = [
+  const zmxPages = [
     {
       title: "ZMX Governance",
-      link: "https://gov.gmx.io/",
-      linkLabel: "gov.gmx.io",
+      link: "https://gov.zmx.io/",
+      linkLabel: "gov.zmx.io",
       about: t`ZMX Governance Page`,
       chainIds: [ARBITRUM, AVALANCHE],
     },
     {
       title: "ZMX Stats",
-      link: "https://stats.gmx.io/",
-      linkLabel: "stats.gmx.io",
+      link: "https://stats.zmx.io/",
+      linkLabel: "stats.zmx.io",
       about: t`ZMX Stats Page`,
       chainIds: [ARBITRUM, AVALANCHE],
     },
     {
       title: "ZMX Proposals",
-      link: "https://snapshot.org/#/gmx.eth",
+      link: "https://snapshot.org/#/zmx.eth",
       linkLabel: "snapshot.org",
       about: t`ZMX Proposals Voting page`,
       chainIds: [ARBITRUM, AVALANCHE],
@@ -65,8 +65,8 @@ export default function Ecosystem() {
     },
     {
       title: "ZMX Leaderboard",
-      link: "https://www.gmx.house/",
-      linkLabel: "gmx.house",
+      link: "https://www.zmx.house/",
+      linkLabel: "zmx.house",
       about: t`Leaderboard for ZMX traders`,
       creatorLabel: "@Itburnz",
       creatorLink: "https://t.me/Itburnz",
@@ -92,7 +92,7 @@ export default function Ecosystem() {
     },
     {
       title: "DegenClip",
-      link: "https://degenclip.com/gmx",
+      link: "https://degenclip.com/zmx",
       linkLabel: "degenclip.com",
       about: t`Community curated tweet collection`,
       creatorLabel: "@ox21l",
@@ -101,7 +101,7 @@ export default function Ecosystem() {
     },
     {
       title: "ZMX Yield Simulator",
-      link: "https://gmx.defisims.com/",
+      link: "https://zmx.defisims.com/",
       linkLabel: "defisims.com",
       about: t`Yield simulator for ZMX`,
       creatorLabel: "@kyzoeth",
@@ -137,8 +137,8 @@ export default function Ecosystem() {
     },
     {
       title: "ZMX Staking Calculator",
-      link: "https://gmxstaking.com",
-      linkLabel: "gmxstaking.com",
+      link: "https://zmxstaking.com",
+      linkLabel: "zmxstaking.com",
       about: t`ZMX staking calculator`,
       creatorLabel: "@n1njawtf",
       creatorLink: "https://t.me/n1njawtf",
@@ -146,8 +146,8 @@ export default function Ecosystem() {
     },
     {
       title: "ZMX Hedging Simulator",
-      link: "https://www.gmxhedge.com/",
-      linkLabel: "gmxhedge.com",
+      link: "https://www.zmxhedge.com/",
+      linkLabel: "zmxhedge.com",
       about: t`Simulate your hedge strategy`,
       creatorLabel: "@kyzoeth",
       creatorLink: "https://twitter.com/kyzoeth",
@@ -176,8 +176,8 @@ export default function Ecosystem() {
   const dashboardProjects = [
     {
       title: "ZMX Referrals Dashboard",
-      link: "https://www.gmxreferrals.com/",
-      linkLabel: "gmxreferrals.com",
+      link: "https://www.zmxreferrals.com/",
+      linkLabel: "zmxreferrals.com",
       about: t`Dashboard for ZMX referral stats`,
       creatorLabel: "@kyzoeth",
       creatorLink: "https://twitter.com/kyzoeth",
@@ -185,8 +185,8 @@ export default function Ecosystem() {
     },
     {
       title: "ZMX Terminal",
-      link: "https://gmxterminal.com",
-      linkLabel: "gmxterminal.com",
+      link: "https://zmxterminal.com",
+      linkLabel: "zmxterminal.com",
       about: t`ZMX explorer for stats and traders`,
       creatorLabel: "@vipineth",
       creatorLink: "https://t.me/vipineth",
@@ -194,8 +194,8 @@ export default function Ecosystem() {
     },
     {
       title: "ZMX Analytics",
-      link: "https://gmxstats.com/",
-      linkLabel: "gmxstats.com",
+      link: "https://zmxstats.com/",
+      linkLabel: "zmxstats.com",
       about: t`Financial reports and protocol analytics`,
       creatorLabel: "@CryptoMessiah",
       creatorLink: "https://t.me/LarpCapital",
@@ -203,7 +203,7 @@ export default function Ecosystem() {
     },
     {
       title: "TokenTerminal",
-      link: "https://tokenterminal.com/terminal/projects/gmx",
+      link: "https://tokenterminal.com/terminal/projects/zmx",
       linkLabel: "tokenterminal.com",
       about: t`ZMX fundamentals`,
       creatorLabel: "@tokenterminal",
@@ -221,7 +221,7 @@ export default function Ecosystem() {
     },
     {
       title: "Shogun Dashboard (Dune Arbitrum)",
-      link: "https://dune.com/shogun/gmx-analytics-arbitrum",
+      link: "https://dune.com/shogun/zmx-analytics-arbitrum",
       linkLabel: "dune.com",
       about: t`Protocol analytics`,
       creatorLabel: "@JamesCliffyz",
@@ -230,7 +230,7 @@ export default function Ecosystem() {
     },
     {
       title: "Shogun Dashboard (Dune Avalanche)",
-      link: "https://dune.com/shogun/gmx-analytics-avalanche",
+      link: "https://dune.com/shogun/zmx-analytics-avalanche",
       linkLabel: "dune.com",
       about: t`Protocol analytics`,
       creatorLabel: "@JamesCliffyz",
@@ -257,7 +257,7 @@ export default function Ecosystem() {
     },
     {
       title: "ZMX Open Trades Ranking and Stats",
-      link: "https://dune.com/HanSolar/gmx-open-trade-ranking-and-stats",
+      link: "https://dune.com/HanSolar/zmx-open-trade-ranking-and-stats",
       linkLabel: "dune.com",
       about: t`Open trades ranking and stats`,
       creatorLabel: "@hansolar21",
@@ -266,11 +266,11 @@ export default function Ecosystem() {
     },
     {
       title: "ZMX Everything Dashboard",
-      link: "https://dune.com/gmxtrader/gmx-dashboard-insights",
+      link: "https://dune.com/zmxtrader/zmx-dashboard-insights",
       linkLabel: "dune.com",
       about: t`Overall protocol analytics`,
-      creatorLabel: "@gmxtrader",
-      creatorLink: "https://twitter.com/gmxtrader",
+      creatorLabel: "@zmxtrader",
+      creatorLink: "https://twitter.com/zmxtrader",
       chainIds: [ARBITRUM, AVALANCHE],
     },
   ];
@@ -431,7 +431,7 @@ export default function Ecosystem() {
     },
     {
       title: "ZMX (Chinese)",
-      link: "https://t.me/gmxch",
+      link: "https://t.me/zmxch",
       linkLabel: "t.me",
       about: t`Telegram Group (Chinese)`,
     },
@@ -465,7 +465,7 @@ export default function Ecosystem() {
             </div>
           </div>
           <div className="DashboardV2-projects">
-            {gmxPages.map((item) => {
+            {zmxPages.map((item) => {
               const linkLabel = item.linkLabel ? item.linkLabel : item.link;
               return (
                 <div className="App-card" key={item.title}>

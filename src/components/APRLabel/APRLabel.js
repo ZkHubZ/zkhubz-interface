@@ -34,7 +34,7 @@ export default function APRLabel({ chainId, label }) {
 
   const vaultAddress = getContract(chainId, "Vault");
   const nativeTokenAddress = getContract(chainId, "NATIVE_TOKEN");
-  const gmxAddress = getContract(chainId, "ZMX");
+  const zmxAddress = getContract(chainId, "ZMX");
   const esGmxAddress = getContract(chainId, "ES_GMX");
   const bnGmxAddress = getContract(chainId, "BN_GMX");
   const glpAddress = getContract(chainId, "ZLP");
@@ -48,14 +48,14 @@ export default function APRLabel({ chainId, label }) {
 
   const glpManagerAddress = getContract(chainId, "GlpManager");
 
-  const gmxVesterAddress = getContract(chainId, "GmxVester");
+  const zmxVesterAddress = getContract(chainId, "GmxVester");
   const glpVesterAddress = getContract(chainId, "GlpVester");
 
-  const vesterAddresses = [gmxVesterAddress, glpVesterAddress];
+  const vesterAddresses = [zmxVesterAddress, glpVesterAddress];
 
-  const walletTokens = [gmxAddress, esGmxAddress, glpAddress, stakedGmxTrackerAddress];
+  const walletTokens = [zmxAddress, esGmxAddress, glpAddress, stakedGmxTrackerAddress];
   const depositTokens = [
-    gmxAddress,
+    zmxAddress,
     esGmxAddress,
     stakedGmxTrackerAddress,
     bonusGmxTrackerAddress,
@@ -100,7 +100,7 @@ export default function APRLabel({ chainId, label }) {
   );
 
   const { data: stakedGmxSupply } = useSWR(
-    [`StakeV2:stakedGmxSupply:${active}`, chainId, gmxAddress, "balanceOf", stakedGmxTrackerAddress],
+    [`StakeV2:stakedGmxSupply:${active}`, chainId, zmxAddress, "balanceOf", stakedGmxTrackerAddress],
     {
       fetcher: contractFetcher(undefined, Token),
     }
@@ -124,10 +124,10 @@ export default function APRLabel({ chainId, label }) {
     }
   );
 
-  const { gmxPrice } = useGmxPrice(chainId, {}, active);
+  const { zmxPrice } = useGmxPrice(chainId, {}, active);
 
-  const gmxSupplyUrl = getServerUrl(chainId, "/gmx_supply");
-  const { data: gmxSupply } = useSWR([gmxSupplyUrl], {
+  const zmxSupplyUrl = getServerUrl(chainId, "/zmx_supply");
+  const { data: zmxSupply } = useSWR([zmxSupplyUrl], {
     fetcher: (...args) => fetch(...args).then((res) => res.text()),
   });
 
@@ -150,8 +150,8 @@ export default function APRLabel({ chainId, label }) {
     aum,
     nativeTokenPrice,
     stakedGmxSupply,
-    gmxPrice,
-    gmxSupply
+    zmxPrice,
+    zmxSupply
   );
 
   return <>{`${formatKeyAmount(processedData, label, 2, 2, true)}%`}</>;
